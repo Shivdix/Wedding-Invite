@@ -114,16 +114,15 @@
 
   /* ——— Opening, petals, music, reveals ——— */
   body.locked{overflow:hidden}
-  /* Opening screen — pale blush-rose gates closed with a deep-red wax seal at the centre seam (no front card) */
+  /* Opening screen — an ivory envelope with a V flap, sealed at the flap tip with the couple's own wax seal (no front card) */
   .envelope-screen{position:fixed;inset:0;z-index:50;overflow-y:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:26px 16px;text-align:center;background-color:#ece7e3;transition:opacity .9s ease,visibility .9s}
   .envelope-screen.gone{opacity:0;visibility:hidden;pointer-events:none}
-  /* Wax seal — an irregular poured-wax disc in deep Marriott red with the S & S monogram stamped into it */
-  .seal{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);z-index:4;width:102px;height:102px;border:none;border-radius:49% 51% 52% 48%/52% 47% 53% 48%;background:radial-gradient(circle at 34% 28%,#c22a40 0%,#a6192e 42%,#7e1222 74%,#5f0d1a 100%);color:#f9efe9;cursor:pointer;box-shadow:0 12px 26px rgba(95,13,26,.35),inset 0 3px 7px rgba(255,220,210,.35),inset 0 -7px 12px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;padding:0;transition:transform .45s ease,opacity .45s ease}
-  .seal::before{content:"";position:absolute;inset:9px;border-radius:48% 52% 50% 50%/51% 49% 52% 48%;border:1.5px solid rgba(249,239,233,.55);box-shadow:inset 0 2px 5px rgba(0,0,0,.35)}
+  /* Wax seal — the couple's own seal image (red wax, gold S & S, names on the rim) on the envelope flap tip */
+  .seal{position:absolute;left:50%;top:56%;transform:translate(-50%,-50%);z-index:6;width:128px;height:128px;border:none;background:none;padding:0;cursor:pointer;filter:drop-shadow(0 14px 18px rgba(95,13,26,.35));transition:transform .45s ease,opacity .45s ease}
+  .seal img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none}
   .seal::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:1px solid rgba(166,25,46,.6);opacity:.55;animation:sealPulse 2.4s ease-in-out infinite}
-  .seal-mono{font-family:"Great Vibes",cursive;font-size:1.55rem;line-height:1;white-space:nowrap;text-shadow:0 1px 1px rgba(255,230,220,.45),0 -1px 2px rgba(0,0,0,.55)}
   @keyframes sealPulse{0%,100%{transform:scale(1);opacity:.55}50%{transform:scale(1.09);opacity:.15}}
-  .env-press{margin:20px 0 0;color:var(--maroon-deep);font-size:.82rem;letter-spacing:.22em;text-transform:uppercase}
+  .env-press{margin:0;color:var(--maroon-deep);font-size:.82rem;letter-spacing:.22em;text-transform:uppercase}
   .env-skip{background:none;border:none;color:rgba(95,70,60,.8);font:inherit;font-size:.85rem;text-decoration:underline;text-underline-offset:3px;cursor:pointer;min-height:2.75rem;padding:6px 10px}
   /* Falling petals */
   .petals{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:3}
@@ -189,11 +188,14 @@
   .envelope-screen.opening .gate-r{transform:rotateY(72deg)}
   .envelope-screen.opening .seal{animation:sealCrack .8s ease both}
   @keyframes sealCrack{0%{transform:translate(-50%,-50%) scale(1)}30%{transform:translate(-52%,-50%) scale(1.06) rotate(-3deg)}55%{transform:translate(-48%,-50%) scale(1.12) rotate(3deg)}100%{transform:translate(-50%,-30%) scale(.82) rotate(-7deg);opacity:0}}
-  .seal{filter:drop-shadow(0 14px 18px rgba(95,13,26,.35))}
-  .envelope-screen>.seal{top:50%;bottom:auto;transform:translate(-50%,-50%);z-index:5}
-  .envelope-screen .env-press{position:absolute;top:calc(50% + 84px);left:16px;right:16px;text-align:center;z-index:5;margin:0}
-  .envelope-screen .env-skip{position:absolute;top:calc(50% + 118px);left:50%;transform:translateX(-50%);z-index:5;white-space:nowrap}
-  .seal .crack{position:absolute;inset:0;border-radius:inherit;background:linear-gradient(97deg,transparent 46%,rgba(40,3,10,.55) 49%,rgba(255,214,170,.28) 50.5%,transparent 54%);opacity:.5;pointer-events:none}
+  /* ——— Envelope — an ivory paper envelope with a V flap, sealed at the flap tip ——— */
+  .env-wrap{position:relative;z-index:4;display:flex;flex-direction:column;align-items:center;gap:20px}
+  .env-card{position:relative;width:min(88vw,520px);aspect-ratio:1.45;border-radius:8px;background:linear-gradient(160deg,#fbf6ee 0%,#f5ecdf 55%,#efe3cf 100%);box-shadow:0 24px 48px rgba(95,13,26,.28),0 4px 12px rgba(95,13,26,.18);perspective:900px}
+  .env-card::before{content:"";position:absolute;inset:10px;border:1px solid rgba(166,25,46,.28);border-radius:5px;pointer-events:none}
+  .env-names{position:absolute;left:0;right:0;top:60%;margin:0;text-align:center;font-family:"Great Vibes",cursive;font-size:2.1rem;line-height:1.1;color:var(--maroon-deep)}
+  .env-date{position:absolute;left:0;right:0;top:calc(60% + 2.6rem);margin:0;text-align:center;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(95,13,26,.72)}
+  .env-flap{position:absolute;left:0;right:0;top:0;height:56%;clip-path:polygon(0 0,100% 0,50% 100%);background:linear-gradient(180deg,#f0e5d2 0%,#e7d8bf 100%);border-bottom:1px solid rgba(166,25,46,.22);transform-origin:top center;transition:transform .9s cubic-bezier(.65,.02,.25,1);backface-visibility:hidden;z-index:2}
+  .envelope-screen.opening .env-flap{transform:rotateX(180deg)}
   /* RSVP form */
   .rsvp-card{background:var(--surface);border:1px solid var(--blush);border-radius:10px;box-shadow:var(--shadow);padding:26px 26px 22px;max-width:780px;margin:0 auto;text-align:left}
   .rsvp-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -264,10 +266,6 @@
   .garland span:nth-child(odd){color:#c98a94}
   .garland span:nth-child(even){color:#a89a90}
   @keyframes garlandSway{0%,100%{transform:rotate(-1.1deg)}50%{transform:rotate(1.1deg)}}
-  .seal .drip{position:absolute;border-radius:50%;background:radial-gradient(circle at 34% 28%,#c22a40,#7e1222 78%);z-index:-1}
-  .seal .drip.d1{width:26px;height:26px;right:-7px;top:16px}
-  .seal .drip.d2{width:17px;height:17px;left:-4px;bottom:12px}
-  .seal{background-image:radial-gradient(rgba(249,239,233,.4) 1px,transparent 1.6px),radial-gradient(circle at 34% 28%,#c22a40 0%,#a6192e 42%,#7e1222 74%,#5f0d1a 100%);background-size:13px 13px,100% 100%}
   .envelope-screen.opening .gate-l{transform:rotateY(-76deg)}
   .envelope-screen.opening .gate-r{transform:rotateY(76deg)}
   .gate{transition:transform 1.9s cubic-bezier(.65,.02,.25,1)}
@@ -310,18 +308,26 @@
 </style>
 </head>
 <body>
+<div style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#5b2333;color:#f5e6c8;text-align:center;font-family:Georgia,serif;font-size:13px;line-height:1.5;padding:8px 12px;box-shadow:0 2px 10px rgba(0,0,0,.3)">Archived — Invite 5 · Kept for reference. The current invitation is here: <a href="https://shivdix.github.io/Wedding-Invite/invite-4/" style="color:#f5e6c8;font-weight:700">Susan &amp; Shivam — Wedding Invitation</a></div>
 <noscript><style>.envelope-screen{display:none}</style></noscript>
 
-<!-- OPENING GATES — two pale blush-rose doors closed at the centre seam by one deep-red wax seal; no front card -->
-<div class="envelope-screen" id="envelope" role="dialog" aria-modal="true" aria-label="Wedding invitation — break the wax seal to open the gates">
+<!-- OPENING ENVELOPE — an ivory paper envelope with a V flap, sealed at the flap tip with the couple's own wax seal; no front card -->
+<div class="envelope-screen" id="envelope" role="dialog" aria-modal="true" aria-label="Wedding invitation — break the wax seal to open the envelope">
   <div class="garland" aria-hidden="true"><span>❀</span><span>✦</span><span>❀</span><span>✦</span><span>❀</span><span>✦</span><span>❀</span><span>✦</span><span>❀</span><span>✦</span><span>❀</span></div>
   <div class="gates" aria-hidden="true">
     <div class="gate gate-l"><span class="g-knob"></span></div>
     <div class="gate gate-r"><span class="g-knob"></span></div>
   </div>
-  <button class="seal" id="seal" type="button" aria-label="Break the wax seal and open the invitation gates"><span class="drip d1" aria-hidden="true"></span><span class="drip d2" aria-hidden="true"></span><span class="crack" aria-hidden="true"></span><span class="seal-mono">S &amp; S</span></button>
-  <p class="env-press">Break the wax seal to open the gates</p>
-  <button class="env-skip" type="button" id="env-skip">Open without music</button>
+  <div class="env-wrap">
+    <div class="env-card">
+      <p class="env-names">Shivam &amp; Susan</p>
+      <p class="env-date">April 23–24, 2027 · Long Beach, California</p>
+      <div class="env-flap" aria-hidden="true"></div>
+      <button class="seal" id="seal" type="button" aria-label="Break the wax seal and open the invitation"><img src="assets/seal.png" alt="Wax seal — Shivam and Susan" /></button>
+    </div>
+    <p class="env-press">Tap the wax seal to open the invitation</p>
+    <button class="env-skip" type="button" id="env-skip">Open without music</button>
+  </div>
 </div>
 
 <div class="petals" id="petals" aria-hidden="true"></div>

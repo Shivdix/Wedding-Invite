@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="light" />
 <link rel="icon" href="data:," />
-<title>Shivam &amp; Susan — Wedding Invitation · April 23–24, 2027 · Long Beach &amp; Norwalk</title>
+<title>Susan &amp; Shivam — Wedding Invitation · April 23–24, 2027 · Long Beach &amp; Norwalk</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Jost:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Jost:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet" />
 <style>
   :root{
     color-scheme:light;
-    --bg:#fff6e3; --surface:#fffdf6; --surface2:#fdeed3;
-    --ink:#40211c; --ink-soft:#7c5a4a; --line:#e8cf9e;
-    --maroon:#7a1a2e; --maroon-deep:#5c1122;
-    --gold:#b8860b; --marigold:#e07f13; --rose:#b03a2e;
-    --chip:#fdeed3; --shadow:0 12px 32px rgba(122,26,46,.12);
+    --bg:#fdf4f1; --surface:#fffaf8; --surface2:#fbe9e4;
+    --ink:#4a1f26; --ink-soft:#8a5a5e; --line:#f0d2ca;
+    --maroon:#c93a54; --maroon-deep:#a82b43;
+    --gold:#c9962e; --marigold:#5c7a45; --rose:#e85a71;
+    --chip:#fbe9e4; --shadow:0 12px 32px rgba(201,58,84,.16);
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;background-color:var(--bg);background-image:radial-gradient(rgba(184,134,11,.07) 1px,transparent 1.5px),linear-gradient(180deg,#fffaf0 0%,#fff3da 55%,#fdf0d8 100%);background-size:22px 22px,100% 100%;color:var(--ink);font-family:"Jost",system-ui,sans-serif;font-size:17px;line-height:1.55}
+  body{margin:0;background-color:var(--bg);background-image:radial-gradient(rgba(201,150,46,.08) 1px,transparent 1.5px),linear-gradient(180deg,#fffaf8 0%,#fdf0ec 55%,#fbe9e4 100%);background-size:22px 22px,100% 100%;color:var(--ink);font-family:"Jost",system-ui,sans-serif;font-size:17px;line-height:1.55}
   button,[role="button"],a.btn{min-height:2.75rem}
   .wrap{max-width:1060px;margin:0 auto;padding:0 20px 64px}
   h1,h2,h3,h4{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.1;margin:0}
@@ -36,9 +36,9 @@
   .dateline strong{color:var(--maroon);font-weight:600}
   .blessing{margin-top:8px;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.15rem;color:var(--rose)}
   .countdown{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:26px 0 6px}
-  .cd{background:var(--surface);border:1px solid var(--line);border-radius:8px;min-width:76px;padding:10px 8px 8px;box-shadow:var(--shadow)}
-  .cd b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.9rem;line-height:1;color:var(--maroon)}
-  .cd span{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+  .cd{background:var(--surface);border:1px solid var(--line);border-radius:8px;min-width:76px;padding:10px 8px 8px;box-shadow:var(--shadow);text-align:center}
+  .cd b{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.9rem;line-height:1;color:var(--maroon);text-align:center}
+  .cd span{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);text-align:center}
   .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
   .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;border:1px solid var(--maroon);font:inherit;font-size:.95rem;cursor:pointer;text-decoration:none;background:var(--maroon);color:#fdf6ea}
   .btn.ghost{background:transparent;color:var(--maroon)}
@@ -54,8 +54,9 @@
   /* Schedule */
   .days{display:grid;grid-template-columns:1fr 1fr;gap:20px}
   @media (max-width:760px){.days{grid-template-columns:1fr}}
-  .day{background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);overflow:hidden}
+  .day{background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column}
   .day.sat{background:var(--maroon);border-color:var(--maroon)}
+  .day.sat .quote{color:#f9ccd4}
   .day-head{padding:16px 22px;background:var(--surface2);border-bottom:1px solid var(--line)}
   .day.sat .day-head{background:transparent;border-bottom:1px solid rgba(253,246,234,.25)}
   .day-head .dow{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--marigold);font-weight:600}
@@ -222,6 +223,250 @@
   .celebrate{border-radius:12px}
   .ev-photo{display:block;width:100%;height:190px;object-fit:cover;border-radius:170px 170px 6px 6px;border:1px solid var(--gold);box-shadow:0 6px 16px rgba(122,26,46,.18);margin:0 0 12px;background:var(--surface2)}
   .day.sat .ev-photo{border-color:#f0b35e}
+  /* ——— Haldi flip card — "Sol y Haldi": sunny marigold front (page 1), cream & gold back with the meaning of Haldi (page 2). Tap to flip; the box resizes to the face showing. ——— */
+  .haldi-event{perspective:1600px}
+  .flip-inner{position:relative;transform-style:preserve-3d;transition:transform .85s cubic-bezier(.35,.65,.3,1),height .85s cubic-bezier(.35,.65,.3,1)}
+  .haldi-event.flipped .flip-inner{transform:rotateY(180deg)}
+  .flip-face{border-radius:14px;padding:20px 20px 16px;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden}
+  .flip-front{position:relative;text-align:center;color:#5b2330;background:linear-gradient(165deg,#fff8e2 0%,#ffe9bd 30%,#ffd09e 55%,#ffb3c1 84%,#f78fb0 100%);border:1px solid #d97a1e;box-shadow:0 8px 22px rgba(201,58,84,.20)}
+  .flip-front::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.45rem;line-height:1;color:#e07f13;opacity:.9}
+  .flip-front::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.45rem;line-height:1;color:#d6336c;opacity:.9}
+  .flip-front .hf-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .flip-front .hf-time{font-weight:600;letter-spacing:.05em;color:#8a2b12;background:rgba(255,255,255,.6);border:1px solid rgba(201,90,20,.55);padding:2px 12px;border-radius:999px;font-size:.9rem}
+  .flip-front .hf-kicker{margin:10px 0 0;font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:#7a5a16;font-weight:600}
+  .flip-front .hf-title{font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(2.7rem,9vw,3.5rem);line-height:1.15;margin:2px 0 0;color:#b8860b}
+  .flip-front .hf-title .sol{color:#b8860b}
+  .flip-front .hf-title .y{color:#5c7a45}
+  .flip-front .hf-title .haldiw{color:#d6336c}
+  .flip-front .hf-sub{margin:6px auto 0;max-width:350px;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;line-height:1.65;color:#8a5a12;font-weight:600}
+  .flip-front .hf-body{margin:12px auto 0;max-width:410px;font-size:.97rem;line-height:1.6;color:#5b2330}
+  .flip-front .hf-facts{margin:14px 0 0;font-size:.92rem;font-weight:600;color:#7a2b12}
+  .flip-hint{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:8px 18px;min-height:2.5rem;border-radius:999px;border:1px solid var(--maroon);background:var(--maroon);color:#fdf6ea;font:inherit;font-size:.88rem;font-weight:600;cursor:pointer}
+  .flip-hint:hover{background:var(--maroon-deep)}
+  .flip-back{position:absolute;top:0;left:0;width:100%;transform:rotateY(180deg);text-align:center;color:var(--ink);background:linear-gradient(170deg,#fffdf4,#fdf6e0);border:1px solid var(--gold);box-shadow:inset 0 0 0 4px #fffdf4,inset 0 0 0 5px rgba(201,150,46,.55),0 8px 22px rgba(122,26,46,.14)}
+  .flip-back::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.3rem;line-height:1;color:#e07f13;opacity:.85}
+  .flip-back::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.3rem;line-height:1;color:#d6336c;opacity:.85}
+  .flip-back .hb-title{margin:2px 0 0;font-family:"Jost",sans-serif;font-size:1.02rem;letter-spacing:.22em;text-transform:uppercase;color:#6b5a2a;font-weight:600}
+  .flip-back .hb-title .hb-haldi{display:block;font-family:"Great Vibes",cursive;font-size:2.7rem;letter-spacing:0;text-transform:none;line-height:1.1;color:#d6336c;margin-top:2px}
+  .hb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:15px 16px;margin-top:16px}
+  .hb-mean .hb-ico{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0 auto 6px;border:1px solid var(--gold);border-radius:50%;background:#fffaf0;color:#c9962e;font-size:1.25rem;line-height:1}
+  .hb-mean .hb-pic{display:block;width:100%;max-width:172px;height:auto;margin:0 auto 8px;border:1px solid rgba(201,150,46,.55);border-radius:10px;background:#fdf6e0}
+  .hb-mean h5{margin:0;font-size:.92rem;letter-spacing:.12em;color:#c2255c;font-weight:600}
+  .hb-mean p{margin:4px 0 0;font-size:.88rem;line-height:1.5;color:var(--ink-soft)}
+  .hb-sec{margin-top:18px;border-top:1px solid rgba(201,150,46,.45);padding-top:14px}
+  .hb-sec h5{margin:0 0 9px;font-size:1rem;letter-spacing:.2em;color:#c2255c;font-weight:600}
+  .hb-sec .hb-item{margin:0 auto 10px;max-width:440px;font-size:.92rem;line-height:1.55;color:var(--ink-soft)}
+  .hb-sec .hb-item:last-child{margin-bottom:0}
+  .hb-sec .hb-item b{display:block;color:var(--ink);font-size:.9rem;letter-spacing:.08em;margin-bottom:2px}
+  .hb-sec .hb-wear{margin:0 auto;max-width:440px;font-size:.92rem;line-height:1.55;color:var(--ink-soft)}
+  .flip-back .hb-photo{display:block;width:100%;max-width:440px;height:190px;object-fit:cover;border:1px solid var(--gold);border-radius:10px;box-shadow:0 6px 16px rgba(122,26,46,.16);margin:0 auto 12px;background:var(--surface2)}
+  .flip-back .hb-photo-expect{object-position:center 62%}
+  .flip-back .hb-photo-wear{height:auto;max-width:300px;object-fit:cover}
+  .flip-back .flip-hint{background:transparent;color:var(--maroon)}
+  .flip-back .flip-hint:hover{background:var(--surface2)}
+  @media (prefers-reduced-motion: reduce){.flip-inner{transition:none}}
+  @media print{.flip-back{display:none}.flip-inner{height:auto!important;transform:none!important}}
+  /* ——— Reception flip card — "Mexican Traditions": festive floral front (page 2), cream & gold back with the traditions (page 3) ——— */
+  .reception-event{perspective:1600px}
+  .reception-event.flipped .flip-inner{transform:rotateY(180deg)}
+  .rflip-front{position:relative;text-align:center;color:#5b2330;background:linear-gradient(165deg,#fff8ec 0%,#ffe9c2 30%,#ffd1a8 55%,#ffb3c1 82%,#f78fb0 100%);border:1px solid #d97a1e;box-shadow:0 8px 22px rgba(201,58,84,.20)}
+  .rflip-front::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.45rem;line-height:1;color:#e07f13;opacity:.9}
+  .rflip-front::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.45rem;line-height:1;color:#d6336c;opacity:.9}
+  .rflip-front .rf-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .rflip-front .rf-time{font-weight:600;letter-spacing:.04em;color:#8a2b12;background:rgba(255,255,255,.6);border:1px solid rgba(201,90,20,.55);padding:2px 12px;border-radius:999px;font-size:.88rem}
+  .rflip-front .rf-kicker{margin:10px 0 0;font-size:.8rem;letter-spacing:.28em;text-transform:uppercase;color:#7a5a16;font-weight:600;line-height:1.6}
+  .rflip-front .rf-title{margin:4px 0 0;font-family:"Jost",sans-serif;font-weight:600;line-height:1.15;color:#8a6a1f}
+  .rflip-front .rf-title .rf-script{display:block;font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(2.6rem,9vw,3.4rem);line-height:1.12;color:#c2255c}
+  .rflip-front .rf-title .rf-gold{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:clamp(1.45rem,6vw,1.95rem);letter-spacing:.14em;line-height:1.2;color:#b8860b;margin-top:2px;text-transform:uppercase}
+  .rflip-front .rf-body{margin:12px auto 0;max-width:430px;font-size:.97rem;line-height:1.6;color:#5b2330}
+  .rflip-front .rf-proverb{margin:16px auto 0;max-width:430px;border-top:1px solid rgba(201,150,46,.55);border-bottom:1px solid rgba(201,150,46,.55);padding:14px 10px 12px;background:rgba(255,255,255,.35)}
+  .rflip-front .rf-proverb p{margin:0;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.12rem;line-height:1.5;color:#7a1a2e}
+  .rflip-front .rf-proverb span{display:block;margin-top:6px;font-family:"Jost",sans-serif;font-style:normal;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:#8a5a12;font-weight:600}
+  .rflip-front .rf-facts{margin:14px 0 0;font-size:.92rem;font-weight:600;color:#7a2b12;line-height:1.55}
+  .rflip-back{position:absolute;top:0;left:0;width:100%;transform:rotateY(180deg);text-align:center;color:var(--ink);background:linear-gradient(170deg,#fffdf4,#fdf6e0);border:1px solid var(--gold);box-shadow:inset 0 0 0 4px #fffdf4,inset 0 0 0 5px rgba(201,150,46,.55),0 8px 22px rgba(122,26,46,.14)}
+  .rflip-back::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.3rem;line-height:1;color:#e07f13;opacity:.85}
+  .rflip-back::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.3rem;line-height:1;color:#d6336c;opacity:.85}
+  .rflip-back .rb-title{margin:2px 0 0;font-family:"Jost",sans-serif;font-size:1.0rem;letter-spacing:.2em;text-transform:uppercase;color:#6b5a2a;font-weight:600;line-height:1.5}
+  .rflip-back .rb-title .rb-trad{display:block;font-family:"Great Vibes",cursive;font-size:clamp(2.2rem,8.5vw,2.7rem);letter-spacing:0;text-transform:none;line-height:1.12;color:#d6336c;margin-top:2px;font-weight:400}
+  .rb-trad-item{margin-top:16px;border-top:1px solid rgba(201,150,46,.45);padding-top:14px;text-align:left;max-width:460px;margin-left:auto;margin-right:auto}
+  .rb-trad-item:first-of-type{border-top:none;padding-top:4px}
+  .rb-trad-item h5{margin:0;font-size:1.02rem;letter-spacing:.14em;color:#c2255c;font-weight:600;text-align:center}
+  .rb-trad-item p{margin:6px 0 0;font-size:.93rem;line-height:1.55;color:var(--ink-soft)}
+  .rb-trad-item ul{margin:8px 0 0;padding-left:20px;font-size:.92rem;line-height:1.55;color:var(--ink-soft)}
+  .rb-trad-item li{margin:3px 0}
+  .rb-expect{margin-top:18px;border-top:1px solid rgba(201,150,46,.45);padding-top:14px}
+  .rb-expect h5{margin:0 0 10px;font-size:1rem;letter-spacing:.2em;color:#c2255c;font-weight:600}
+  .rb-expect-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+  .rb-expect-grid div{font-size:.82rem;letter-spacing:.08em;font-weight:600;color:#6b4a1f;line-height:1.45}
+  .rb-expect-grid div span{display:block;font-size:1.3rem;margin-bottom:4px;color:#c9962e}
+  .rflip-back .flip-hint{background:transparent;color:var(--maroon)}
+  .rflip-back .flip-hint:hover{background:var(--surface2)}
+  @media print{.rflip-back{display:none}}
+  /* ——— Sangeet flip card — "Una Noche de Sangeet": midnight navy gradient front (the old navy family: #0a0e2c → #2a3170) with gold script title, cream & gold back with the meaning of Sangeet. Tap to flip; the box resizes to the face showing. ——— */
+  .sangeet-event{perspective:1600px}
+  .sangeet-event.flipped .flip-inner{transform:rotateY(180deg)}
+  .sflip-front{position:relative;text-align:center;padding:0;color:#fdf6ea;background:linear-gradient(165deg,#0a0e2c 0%,#10163e 30%,#151b4a 55%,#1d2456 80%,#2a3170 100%);border:1px solid var(--gold);box-shadow:0 8px 22px rgba(11,16,48,.35);overflow:hidden}
+  .sf-head{position:relative;text-align:center;color:#fdf3da;padding:18px 20px 0;overflow:hidden}
+  .sf-head .btn.ghost{color:#f7e7bd;border-color:rgba(243,207,154,.8)}
+  .sf-head .btn.ghost:hover{border-color:#f7e7bd}
+  .sf-body{position:relative;padding:14px 20px 16px;text-align:center}
+  .sf-body::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.3rem;line-height:1;color:#e9c877;opacity:.9}
+  .sf-body::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.3rem;line-height:1;color:#f3d98b;opacity:.9}
+  .sf-title{margin:4px 0 0;font-family:"Jost",sans-serif;font-weight:600;line-height:1.15;color:#e9c877}
+  .sf-title .sf-script{display:block;font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(2.6rem,9vw,3.4rem);line-height:1.12;color:#f3d98b;text-shadow:0 2px 14px rgba(10,10,40,.45)}
+  .sf-title .sf-title-big{display:block;font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(3.2rem,11vw,4.3rem);letter-spacing:0;line-height:1.12;color:#e9c877;text-shadow:0 2px 14px rgba(10,10,40,.45),0 0 18px rgba(255,190,80,.35);margin-top:2px}
+  .sf-sub{margin:10px auto 0;max-width:380px;font-size:.86rem;letter-spacing:.16em;text-transform:uppercase;line-height:1.65;color:#f3d98b;font-weight:600}
+  .sf-body p.sf-p{margin:12px auto 0;max-width:430px;font-size:.97rem;line-height:1.6;color:#fdf6ea}
+  .sf-blends{margin-top:18px;border-top:1px solid rgba(233,200,119,.55);padding-top:14px}
+  .sf-blends h5{margin:0;font-size:.98rem;letter-spacing:.16em;line-height:1.5;color:#e9c877;font-weight:600;text-transform:uppercase}
+  .sf-blends p{margin:8px auto 0;max-width:430px;font-size:.95rem;line-height:1.6;color:rgba(253,246,234,.94)}
+  .sf-facts{margin:14px 0 0;font-size:.92rem;font-weight:600;color:#f7e7bd;line-height:1.55}
+  .sflip-back{position:absolute;top:0;left:0;width:100%;transform:rotateY(180deg);text-align:center;color:var(--ink);background:linear-gradient(170deg,#fffdf4,#fdf6e0);border:1px solid var(--gold);box-shadow:inset 0 0 0 4px #fffdf4,inset 0 0 0 5px rgba(201,150,46,.55),0 8px 22px rgba(122,26,46,.14)}
+  .sflip-back::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.3rem;line-height:1;color:#e07f13;opacity:.85}
+  .sflip-back::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.3rem;line-height:1;color:#d6336c;opacity:.85}
+  .sflip-back .sb-title{margin:2px 0 0;font-family:"Jost",sans-serif;font-size:1.02rem;letter-spacing:.22em;text-transform:uppercase;color:#6b5a2a;font-weight:600;line-height:1.5}
+  .sflip-back .sb-title .sb-sangeet{display:block;font-family:"Great Vibes",cursive;font-size:2.7rem;letter-spacing:0;text-transform:none;line-height:1.1;color:#d6336c;margin-top:2px;font-weight:400}
+  .sb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:15px 16px;margin-top:16px}
+  .sb-mean .sb-ico{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0 auto 6px;border:1px solid var(--gold);border-radius:50%;background:#fffaf0;color:#c9962e;font-size:1.25rem;line-height:1}
+  .sb-mean h5{margin:0;font-size:.92rem;letter-spacing:.1em;color:#c2255c;font-weight:600}
+  .sb-mean p{margin:4px 0 0;font-size:.88rem;line-height:1.5;color:var(--ink-soft)}
+  .sb-sec{margin-top:18px;border-top:1px solid rgba(201,150,46,.45);padding-top:14px}
+  .sb-sec h5{margin:0 0 9px;font-size:1rem;letter-spacing:.2em;color:#c2255c;font-weight:600}
+  .sb-sec .sb-item{margin:0 auto 10px;max-width:440px;font-size:.92rem;line-height:1.55;color:var(--ink-soft)}
+  .sb-sec .sb-item:last-child{margin-bottom:0}
+  .sb-sec .sb-item b{display:block;color:var(--ink);font-size:.9rem;letter-spacing:.08em;margin-bottom:2px}
+  .sb-sec .sb-attire{margin:0 auto;max-width:440px;font-size:.92rem;line-height:1.55;color:var(--ink-soft)}
+  .sflip-back .flip-hint{background:transparent;color:var(--maroon)}
+  .sflip-back .flip-hint:hover{background:var(--surface2)}
+  @media print{.sflip-back{display:none}.sflip-front{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+  /* ——— Catholic flip card — "The Catholic Wedding Ceremony": ivory & gold front with the Mark 10:9 verse (image 1), cream & gold back with the eight traditions and the couple's prayer (image 2). Tap to flip; the box resizes to the face showing. ——— */
+  .catholic-event{perspective:1600px}
+  .catholic-event.flipped .flip-inner{transform:rotateY(180deg)}
+  .cflip-front{position:relative;text-align:center;color:var(--ink);background:linear-gradient(175deg,#fffef9 0%,#fdf8ec 46%,#fbf0d8 100%);border:1px solid var(--gold);box-shadow:inset 0 0 0 4px #fffef9,inset 0 0 0 5px rgba(201,150,46,.5),0 8px 22px rgba(122,26,46,.16)}
+  .cflip-front::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.3rem;line-height:1;color:#c9a86a;opacity:.9}
+  .cflip-front::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.3rem;line-height:1;color:#d8a7b0;opacity:.9}
+  .cflip-front .cf-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .cflip-front .cf-time{font-weight:600;letter-spacing:.05em;color:#7a5a16;background:rgba(255,255,255,.65);border:1px solid rgba(201,150,46,.6);padding:2px 12px;border-radius:999px;font-size:.9rem}
+  .day.sat .catholic-event .cflip-front .btn.ghost,.day.sat .catholic-event .cflip-back .btn.ghost{color:var(--maroon);border-color:var(--maroon)}
+  .cflip-front .cf-cross{margin:10px 0 0;font-size:1.15rem;line-height:1;color:var(--gold)}
+  .cflip-front .cf-kicker,.day.sat .catholic-event .cflip-front .cf-kicker{margin:8px 0 0;font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:#7a5a16;font-weight:600}
+  .cflip-front .cf-title,.day.sat .catholic-event .cflip-front .cf-title{margin:4px 0 0;font-family:"Jost",sans-serif;font-weight:600;line-height:1.15;color:#8a6a1f}
+  .cflip-front .cf-title .cf-script{display:block;font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(2.6rem,9vw,3.4rem);line-height:1.12;color:#c2255c}
+  .cflip-front .cf-title .cf-gold{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:clamp(1.45rem,6vw,1.95rem);letter-spacing:.14em;line-height:1.2;color:#b8860b;margin-top:2px}
+  .cflip-front .cf-rule{margin:8px 0 0;color:var(--gold);font-size:.85rem;letter-spacing:.4em}
+  .cflip-front .cf-sub,.day.sat .catholic-event .cflip-front .cf-sub{margin:8px auto 0;max-width:400px;font-size:.85rem;letter-spacing:.15em;text-transform:uppercase;line-height:1.65;color:#8a5a12;font-weight:600}
+  .cflip-front .cf-body,.day.sat .catholic-event .cflip-front .cf-body{margin:12px auto 0;max-width:430px;font-size:.97rem;line-height:1.62;color:#4a3520}
+  .cflip-front .cf-quote{margin:16px auto 0;max-width:430px;border-top:1px solid rgba(201,150,46,.55);border-bottom:1px solid rgba(201,150,46,.55);padding:12px 12px 11px;background:rgba(255,255,255,.45)}
+  .cflip-front .cf-quote p,.day.sat .catholic-event .cflip-front .cf-quote p{margin:0;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.14rem;line-height:1.5;color:#7a1a2e}
+  .cflip-front .cf-quote span{display:block;margin-top:6px;font-family:"Jost",sans-serif;font-style:normal;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:#8a5a12;font-weight:600}
+  .cflip-front .cf-facts,.day.sat .catholic-event .cflip-front .cf-facts{margin:14px 0 0;font-size:.92rem;font-weight:600;color:#7a4a12;line-height:1.55}
+  .cflip-front .cf-place,.day.sat .catholic-event .cflip-front .cf-place{margin:4px 0 0;font-size:.9rem;color:#8a5a5e}
+  .cflip-back{position:absolute;top:0;left:0;width:100%;transform:rotateY(180deg);text-align:center;color:var(--ink);background:linear-gradient(170deg,#fffdf4,#fdf6e0);border:1px solid var(--gold);box-shadow:inset 0 0 0 4px #fffdf4,inset 0 0 0 5px rgba(201,150,46,.55),0 8px 22px rgba(122,26,46,.14)}
+  .cflip-back::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.3rem;line-height:1;color:#c9a86a;opacity:.85}
+  .cflip-back::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.3rem;line-height:1;color:#d8a7b0;opacity:.85}
+  .cflip-back .cb-cross{margin:2px 0 0;font-size:1rem;line-height:1;color:var(--gold)}
+  .cflip-back .cb-title,.day.sat .catholic-event .cflip-back .cb-title{margin:6px 0 0;font-family:"Jost",sans-serif;font-size:1.0rem;letter-spacing:.2em;text-transform:uppercase;color:#6b5a2a;font-weight:600;line-height:1.5}
+  .cflip-back .cb-title .cb-script{display:block;font-family:"Great Vibes",cursive;font-size:clamp(2.3rem,8.5vw,2.8rem);letter-spacing:0;text-transform:none;line-height:1.12;color:#c2255c;margin-top:2px;font-weight:400}
+  .cb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px 16px;margin-top:18px;text-align:center}
+  .cb-mean .cb-ico{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0 auto 6px;border:1px solid var(--gold);border-radius:50%;background:#fffaf0;color:#b8860b;font-size:1.2rem;line-height:1}
+  .cb-mean h5{margin:0;font-size:.9rem;letter-spacing:.09em;color:#c2255c;font-weight:600;line-height:1.35}
+  .cb-mean p,.day.sat .catholic-event .cb-mean p{margin:4px 0 0;font-size:.88rem;line-height:1.52;color:var(--ink-soft)}
+  .cb-prayer{margin-top:20px;border:1px solid rgba(201,150,46,.6);border-radius:10px;padding:16px 16px 14px;background:rgba(255,255,255,.5)}
+  .cb-prayer .cb-prayer-cross{font-size:.95rem;line-height:1;color:var(--gold)}
+  .cb-prayer h5{margin:6px 0 0;font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(1.9rem,7.5vw,2.4rem);line-height:1.15;color:#c2255c}
+  .cb-prayer p,.day.sat .catholic-event .cb-prayer p{margin:8px auto 0;max-width:440px;font-size:.93rem;line-height:1.6;color:var(--ink-soft)}
+  .cflip-back .flip-hint{background:transparent;color:var(--maroon)}
+  .cflip-back .flip-hint:hover{background:var(--surface2)}
+  .day.sat .catholic-event .cflip-front .cf-cross,.day.sat .catholic-event .cflip-back .cb-cross{color:var(--gold)}
+  .day.sat .catholic-event .cflip-front .cf-rule{color:var(--gold)}
+  .day.sat .catholic-event .cflip-front .cf-quote span{color:#8a5a12}
+  .day.sat .catholic-event .cb-prayer .cb-prayer-cross{color:var(--gold)}
+  @media print{.cflip-back{display:none}}
+  /* ——— Hindu flip card — "Hindu Wedding Ceremony": sunset mandap front (pages 1 + 2), cream & gold back with the eight rituals, what to expect and attire inspiration (page 3). Tap to flip; the box resizes to the face showing. ——— */
+  .hindu-event{perspective:1600px}
+  .hindu-event.flipped .flip-inner{transform:rotateY(180deg)}
+  .hflip-front{position:relative;text-align:center;color:#5b2330;background:linear-gradient(165deg,#fff8e2 0%,#ffe9bd 30%,#ffd09e 55%,#ffb3c1 84%,#f78fb0 100%);border:1px solid #d97a1e;box-shadow:0 8px 22px rgba(201,90,20,.22)}
+  .hflip-front::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.45rem;line-height:1;color:#e07f13;opacity:.9}
+  .hflip-front::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.45rem;line-height:1;color:#d6336c;opacity:.9}
+  .hflip-front .hu-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .hflip-front .hu-time{font-weight:600;letter-spacing:.05em;color:#8a2b12;background:rgba(255,255,255,.6);border:1px solid rgba(201,90,20,.55);padding:2px 12px;border-radius:999px;font-size:.9rem}
+  .day.sat .hindu-event .hflip-front .btn.ghost,.day.sat .hindu-event .hflip-back .btn.ghost{color:var(--maroon);border-color:var(--maroon)}
+  .hflip-front .hu-orn{margin:10px 0 0;font-size:1.05rem;line-height:1;color:#b8860b}
+  .day.sat .hindu-event .hflip-front .hu-title{margin:4px 0 0;font-family:"Jost",sans-serif;font-weight:600;line-height:1.15;color:#8a6a1f}
+  .hflip-front .hu-title .hu-script{display:block;font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(2.9rem,10vw,3.7rem);line-height:1.12;color:#c2255c}
+  .hflip-front .hu-title .hu-gold{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:clamp(1.5rem,6vw,2rem);letter-spacing:.12em;line-height:1.2;color:#b8860b;margin-top:2px}
+  .day.sat .hindu-event .hflip-front .hu-sub{margin:10px auto 0;max-width:400px;font-size:.85rem;letter-spacing:.15em;text-transform:uppercase;line-height:1.65;color:#8a5a12;font-weight:600}
+  .hflip-front .hu-journey{margin:18px 0 0;font-size:1rem;letter-spacing:.2em;text-transform:uppercase;color:#c2255c;font-weight:600}
+  .day.sat .hindu-event .hflip-front .hu-body{margin:10px auto 0;max-width:430px;font-size:.97rem;line-height:1.62;color:#4a2c14}
+  .hflip-front .hu-blend{margin-top:18px;border-top:1px solid rgba(201,150,46,.55);padding-top:14px}
+  .hflip-front .hu-blend h5{margin:0;font-size:1rem;letter-spacing:.2em;text-transform:uppercase;color:#c2255c;font-weight:600}
+  .day.sat .hindu-event .hflip-front .hu-blend p{margin:8px auto 0;max-width:430px;font-size:.95rem;line-height:1.6;color:#5b3a12}
+  .day.sat .hindu-event .hflip-front .hu-facts{margin:14px 0 0;font-size:.92rem;font-weight:600;color:#7a2b12;line-height:1.55}
+  .hflip-back{position:absolute;top:0;left:0;width:100%;transform:rotateY(180deg);text-align:center;color:var(--ink);background:linear-gradient(170deg,#fffdf4,#fdf6e0);border:1px solid var(--gold);box-shadow:inset 0 0 0 4px #fffdf4,inset 0 0 0 5px rgba(201,150,46,.55),0 8px 22px rgba(122,26,46,.14)}
+  .hflip-back::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.3rem;line-height:1;color:#e07f13;opacity:.85}
+  .hflip-back::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.3rem;line-height:1;color:#d6336c;opacity:.85}
+  .day.sat .hindu-event .hflip-back .hub-title{margin:2px 0 0;font-family:"Jost",sans-serif;font-size:1rem;letter-spacing:.2em;text-transform:uppercase;color:#6b5a2a;font-weight:600;line-height:1.5}
+  .hflip-back .hub-title .hub-big{display:block;font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(2.3rem,8.5vw,2.8rem);letter-spacing:0;text-transform:none;line-height:1.12;color:#c2255c;margin-top:2px}
+  .day.sat .hindu-event .hflip-back .hub-sub{margin:8px 0 0;font-size:.8rem;letter-spacing:.26em;text-transform:uppercase;color:#8a5a12;font-weight:600}
+  .hub-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:15px 16px;margin-top:18px}
+  .hub-mean .hub-ico{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0 auto 6px;border:1px solid var(--gold);border-radius:50%;background:#fffaf0;color:#c9962e;font-size:1.25rem;line-height:1}
+  .hub-mean .hub-pic{display:block;width:100%;max-width:172px;aspect-ratio:47/44;object-fit:cover;margin:0 auto 8px;border:1px solid rgba(201,150,46,.55);border-radius:10px;background:#fdf6e0}
+  .hub-mean h5{margin:0;font-size:.92rem;letter-spacing:.1em;color:#c2255c;font-weight:600}
+  .day.sat .hindu-event .hub-mean p{margin:4px 0 0;font-size:.88rem;line-height:1.5;color:var(--ink-soft)}
+  .hub-sec{margin-top:18px;border-top:1px solid rgba(201,150,46,.45);padding-top:14px}
+  .hub-sec h5{margin:0 0 10px;font-size:1rem;letter-spacing:.2em;color:#c2255c;font-weight:600}
+  .hub-expect-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px 12px}
+  .hub-expect-grid div{font-size:.82rem;letter-spacing:.08em;font-weight:600;color:#6b4a1f;line-height:1.45}
+  .hub-expect-grid div span{display:block;font-size:1.3rem;margin-bottom:4px;color:#c9962e}
+  .day.sat .hindu-event .hub-expect-grid div p{margin:4px 0 0;font-size:.85rem;font-weight:400;letter-spacing:0;line-height:1.5;color:var(--ink-soft)}
+  .day.sat .hindu-event .hflip-back .hub-attire{margin:0 auto;max-width:440px;font-size:.92rem;line-height:1.55;color:var(--ink-soft)}
+  .hu-swatches{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px 0 4px}
+  .hu-swatches span{width:36px;height:36px;border-radius:50%;border:1px solid rgba(0,0,0,.08);box-shadow:inset 0 -3px 6px rgba(0,0,0,.18)}
+  .hu-swatches .w1{background:#c2255c}
+  .hu-swatches .w2{background:#f07d1a}
+  .hu-swatches .w3{background:#d9a41c}
+  .hu-swatches .w4{background:#5c7a45}
+  .hu-swatches .w5{background:#0e8a7d}
+  .hu-swatches .w6{background:#f28ba8}
+  .hu-swatches .w7{background:#7b3fa0}
+  .hflip-back .flip-hint{background:transparent;color:var(--maroon)}
+  .hflip-back .flip-hint:hover{background:var(--surface2)}
+  @media print{.hflip-back{display:none}}
+  .bollywood-card{position:relative;text-align:center;color:#fdf3da;background-color:#10163e;background-image:radial-gradient(rgba(233,200,119,.16) 1px,transparent 1.6px),radial-gradient(130% 100% at 50% -10%,#2a3170 0%,#151b4a 48%,#0a0e2c 100%);background-size:26px 26px,100% 100%;border:1px solid var(--gold);border-radius:14px;box-shadow:inset 0 0 0 4px #10153c,inset 0 0 0 5px rgba(201,150,46,.5),0 8px 22px rgba(11,16,48,.35);padding:18px 20px 16px;overflow:hidden}
+  .bollywood-card::before{content:"❀";position:absolute;bottom:6px;left:10px;font-size:1.35rem;line-height:1;color:#f07d1a;opacity:.9}
+  .bollywood-card::after{content:"❀";position:absolute;bottom:6px;right:10px;font-size:1.35rem;line-height:1;color:#e85a71;opacity:.9}
+  .bc-lantern{position:absolute;top:0;width:15px;z-index:1}
+  .bc-lantern::before{content:"";display:block;width:1px;height:var(--drop,20px);margin:0 auto;background:linear-gradient(rgba(233,200,119,.85),rgba(233,200,119,.45))}
+  .bc-lantern::after{content:"";display:block;width:15px;height:19px;margin:0 auto;border-radius:46% 46% 52% 52%;background:radial-gradient(circle at 50% 38%,#ffedb5,#e3a92e 58%,#8f6410);box-shadow:0 0 16px 4px rgba(255,190,80,.5)}
+  .bc-lantern.l1{left:6px;--drop:30px}
+  .bc-lantern.l2{right:6px;--drop:30px}
+  .bc-lantern.l3{left:64px;--drop:15px}
+  .bc-lantern.l4{right:64px;--drop:15px}
+  .bc-top{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:22px;padding:0 2px}
+  .bc-time{font-weight:600;letter-spacing:.05em;color:#f7e7bd;background:rgba(255,255,255,.10);border:1px solid rgba(201,150,46,.65);padding:2px 12px;border-radius:999px;font-size:.88rem}
+  .bollywood-card .btn.ghost{color:#f7e7bd;border-color:rgba(243,207,154,.8)}
+  .bollywood-card .btn.ghost:hover{border-color:#f7e7bd}
+  .bc-kicker{margin:14px 0 0;font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;color:#e9c877;font-weight:600}
+  .bc-title{margin:2px 0 0;font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(2.7rem,9vw,3.5rem);line-height:1.12;color:#f3d98b;text-shadow:0 2px 14px rgba(255,190,80,.35)}
+  .bc-title .bc-bolly{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:clamp(2.1rem,8.5vw,2.95rem);letter-spacing:.13em;line-height:1.05;color:#e9c877;text-shadow:0 0 18px rgba(255,190,80,.4)}
+  .bc-sub{margin:10px 0 0;font-size:.86rem;letter-spacing:.3em;text-transform:uppercase;color:#fdf3da;font-weight:600}
+  .bc-rule{margin:8px 0 0;color:#c9962e;font-size:.8rem;letter-spacing:.5em}
+  .bc-words{margin:8px 0 0;font-size:.82rem;letter-spacing:.24em;text-transform:uppercase;color:#e9c877;font-weight:600}
+  .bc-when{margin:14px 0 0;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.28rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;line-height:1.45;color:#fff3d6}
+  .bc-venue{margin:8px 0 0;font-size:.84rem;letter-spacing:.15em;text-transform:uppercase;line-height:1.75;color:rgba(253,243,218,.88)}
+  .bc-dress{margin:16px auto 2px;max-width:430px;background:linear-gradient(170deg,#fffdf4,#fdf3da);color:#5b2330;border:1px solid var(--gold);border-radius:10px;padding:14px 16px 12px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+  .bc-dress-h{margin:0;font-size:.85rem;letter-spacing:.26em;text-transform:uppercase;color:#c2255c;font-weight:600}
+  .bc-dress-t{margin:5px 0 0;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.22rem;font-weight:600;color:#4a1f26}
+  .bc-swatches{display:flex;gap:7px;justify-content:center;margin:11px 0 4px}
+  .bc-swatches span{width:34px;height:15px;border-radius:60% 40% 55% 45%/70% 60% 40% 30%;box-shadow:inset 0 -2px 4px rgba(0,0,0,.18)}
+  .bc-swatches .s1{background:#ec407a;transform:rotate(-4deg)}
+  .bc-swatches .s2{background:#d32f2f;transform:rotate(3deg)}
+  .bc-swatches .s3{background:#f07d1a;transform:rotate(-3deg)}
+  .bc-swatches .s4{background:#d9a41c;transform:rotate(4deg)}
+  .bc-swatches .s5{background:#0e8a7d;transform:rotate(-4deg)}
+  .bc-swatches .s6{background:#7b3fa0;transform:rotate(3deg)}
+  .bc-close{margin:9px 0 0;font-size:.93rem;line-height:1.5;color:#5b4a2a}
+  @media print{.bollywood-card{background:#10163e;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
   .venue{border-radius:130px 130px 10px 10px;border-color:var(--gold)}
   .venue img{border-right:1px solid var(--gold)}
   @media (max-width:760px){.venue{border-radius:80px 80px 10px 10px}.venue img{border-right:none;border-bottom:1px solid var(--gold)}}
@@ -234,10 +479,10 @@
   .invite-viewer img.fading{opacity:0}
   .invite-viewer figcaption{padding:12px 16px;font-size:.95rem;color:var(--ink-soft);text-align:center}
   .invite-viewer .inv-count{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-top:3px;font-weight:600}
-  .invite-thumbs{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:680px;margin:16px auto 0}
-  .invite-thumb{flex:0 1 calc(20% - 10px);min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:64px 64px 8px 8px;overflow:hidden;box-shadow:var(--shadow);padding:0;cursor:pointer;font:inherit;text-align:center;color:inherit}
-  .invite-thumb img{display:block;width:100%;height:auto;pointer-events:none}
-  .invite-thumb span{display:block;padding:7px 6px 9px;font-size:.78rem;line-height:1.3;color:var(--ink-soft)}
+  .invite-thumbs{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:stretch;max-width:680px;margin:16px auto 0}
+  .invite-thumb{display:flex;flex-direction:column;flex:0 1 calc(20% - 10px);min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:64px 64px 8px 8px;overflow:hidden;box-shadow:var(--shadow);padding:0;cursor:pointer;font:inherit;text-align:center;color:inherit}
+  .invite-thumb img{display:block;width:100%;flex:1 1 auto;min-height:0;aspect-ratio:9/14;object-fit:cover;object-position:center;pointer-events:none}
+  .invite-thumb span{display:block;flex:0 0 auto;padding:7px 6px 9px;font-size:.78rem;line-height:1.3;color:var(--ink-soft)}
   .invite-thumb.active{border-color:var(--maroon);box-shadow:0 0 0 2px var(--maroon),var(--shadow)}
   .invite-thumb.active span{color:var(--maroon);font-weight:600}
   .invite-thumb:focus-visible{outline:2px solid var(--marigold);outline-offset:2px}
@@ -292,45 +537,235 @@
   .gate{transition:transform 1.9s cubic-bezier(.65,.02,.25,1)}
   @media (prefers-reduced-motion: reduce){.garland{animation:none}.gate{transition:none}}
   @media print{.xcard,.air-card,.about-card{break-inside:avoid}}
+
+  /* ——— Style A "Strawberry": the final seal image, the 5-second light opening, the animated floral-archway hero ——— */
+  .seal{width:150px;height:150px;border-radius:50%;background:transparent;box-shadow:none;padding:0;transition:transform 1.8s ease,opacity 1.1s ease,filter 1.8s ease}
+  .seal::before{display:none}
+  .seal::after{inset:-9px;border-color:rgba(255,214,120,.7)}
+  .seal img{width:100%;height:100%;display:block;pointer-events:none}
+  .seal.glow{filter:drop-shadow(0 0 26px rgba(255,205,90,1)) drop-shadow(0 0 84px rgba(255,175,50,.75));transform:translate(-50%,-50%) scale(1.09)}
+  .envelope-screen.opening .gate-l,.envelope-screen.opening .gate-r{transform:none}
+  .envelope-screen.opening .seal{animation:none}
+  .envelope-screen .env-press{top:calc(50% + 104px)}
+  .envelope-screen .env-skip{top:calc(50% + 138px)}
+  .env-spread{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;background:radial-gradient(circle at 50% 50%,rgba(255,214,120,.5) 0%,rgba(255,190,80,.18) 34%,transparent 68%)}
+  .envelope-screen.phase-glow .env-spread{animation:spreadIn 2.6s ease forwards}
+  @keyframes spreadIn{from{opacity:0}to{opacity:1}}
+  .env-glowdisc{position:absolute;left:50%;top:50%;width:340px;height:340px;border-radius:50%;transform:translate(-50%,-50%) scale(.3);opacity:0;pointer-events:none;z-index:4;background:radial-gradient(circle,rgba(255,226,150,.9) 0%,rgba(255,190,80,.35) 45%,transparent 70%)}
+  .envelope-screen.phase-glow .env-glowdisc{animation:discGrow 2.5s ease forwards}
+  @keyframes discGrow{0%{opacity:0;transform:translate(-50%,-50%) scale(.3)}100%{opacity:1;transform:translate(-50%,-50%) scale(1.25)}}
+  .env-flood{position:absolute;inset:-10%;z-index:6;pointer-events:none;opacity:0;background:radial-gradient(circle at 50% 50%,#ffffff 0%,#fffaf0 38%,#fdf3da 68%,#fbeecd 100%)}
+  .envelope-screen.phase-flood .env-flood{animation:floodIn 2s ease forwards}
+  @keyframes floodIn{0%{opacity:0;transform:scale(.6)}100%{opacity:1;transform:scale(1)}}
+  .envelope-screen.phase-flood .seal{opacity:0}
+  .hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:0;text-align:center}
+  .hero-bg{position:absolute;inset:0}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 32%;display:block;animation:heroZoom 30s ease-in-out infinite alternate}
+  @keyframes heroZoom{from{transform:scale(1.02)}to{transform:scale(1.13) translate(-1.4%,1.2%)}}
+  .hero-veil{position:absolute;inset:0;background:radial-gradient(92% 60% at 50% 52%,rgba(24,8,4,.42) 0%,rgba(24,8,4,.16) 55%,transparent 80%),linear-gradient(180deg,rgba(24,8,4,.30) 0%,transparent 24%,transparent 70%,rgba(24,8,4,.45) 100%)}
+  #glitter{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}
+  .sparkle{position:absolute;border-radius:50%;background:#ffe9a8;box-shadow:0 0 6px 1px rgba(255,210,110,.8);opacity:0;animation-name:twinkle;animation-timing-function:ease-in-out;animation-iteration-count:infinite}
+  @keyframes twinkle{0%,100%{opacity:0;transform:scale(.6)}50%{opacity:.95;transform:scale(1.15)}}
+  .lantern-glows{position:absolute;inset:0;z-index:2;pointer-events:none}
+  .lantern-glows span{position:absolute;left:var(--x);top:var(--y);width:92px;height:92px;margin:-46px 0 0 -46px;border-radius:50%;background:radial-gradient(circle,rgba(255,196,84,.5) 0%,rgba(255,170,50,.16) 45%,transparent 70%);animation:flicker 2.8s ease-in-out infinite}
+  .lantern-glows span:nth-child(2){animation-delay:.7s;animation-duration:3.4s}
+  .lantern-glows span:nth-child(3){animation-delay:1.3s;animation-duration:2.5s}
+  .lantern-glows span:nth-child(4){animation-delay:.4s;animation-duration:3.9s}
+  .lantern-glows span:nth-child(5){animation-delay:1.8s;animation-duration:3.1s}
+  .lantern-glows span:nth-child(6){animation-delay:.9s;animation-duration:2.6s}
+  @keyframes flicker{0%,100%{opacity:.45;transform:scale(1)}28%{opacity:.85;transform:scale(1.1)}47%{opacity:.55}63%{opacity:.95;transform:scale(1.16)}82%{opacity:.6}}
+  .hero-flash{position:absolute;inset:0;z-index:6;pointer-events:none;opacity:1;background:radial-gradient(circle at 50% 50%,#ffffff 0%,#fffaf0 40%,#fdf3da 75%,#fbeecd 100%)}
+  body.opened .hero-flash{opacity:0;transition:opacity 1s ease}
+  .hero-content{position:relative;z-index:3;padding:48px 14px 88px;max-width:820px;width:100%;overflow:visible;transform:translateY(3.5vh)}
+  .hero .families{color:#fdf3da;letter-spacing:.3em;text-shadow:0 1px 10px rgba(0,0,0,.6);margin:0 0 10px}
+  .hero .names{font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(3.6rem,13vw,6.2rem);line-height:1.42;padding:.16em .4em .12em;margin:-.06em -.4em 0;overflow:visible;color:#f7e7bd;background:linear-gradient(100deg,#e9c877 15%,#fffbe9 38%,#f3d98b 50%,#c9962e 62%,#f7e7bd 85%);background-size:230% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 6s linear infinite;filter:drop-shadow(0 3px 16px rgba(20,6,2,.55))}
+  @keyframes shimmer{0%{background-position:120% 0}100%{background-position:-120% 0}}
+  .hero .tagline{color:#fdf3da;text-shadow:0 1px 12px rgba(0,0,0,.65);margin-top:10px}
+  .hero .dateline{color:#fff8ea;text-shadow:0 1px 10px rgba(0,0,0,.6)}
+  .hero .dateline strong{color:#fff8ea}
+  .hero .blessing{color:rgba(253,243,218,.92);text-shadow:0 1px 10px rgba(0,0,0,.6)}
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1)}
+  body.opened .reveal{opacity:1;transform:none}
+  body.opened .rv-fam{transition-delay:.15s}
+  body.opened .rv-names{transition-delay:.3s}
+  body.opened .rv-tag{transition-delay:1.15s}
+  body.opened .rv-date{transition-delay:2s}
+  body.opened .rv-bless{transition-delay:2.6s}
+  .scroll-cue{position:absolute;z-index:4;left:50%;bottom:calc(max(12px,env(safe-area-inset-bottom)) + 14px);transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:2px;background:none;border:0;cursor:pointer;color:#fdf3da;font-family:inherit;font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;padding:10px 18px;min-height:44px;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+  .scroll-cue svg{width:22px;height:22px;animation:cueBounce 1.8s ease-in-out infinite;filter:drop-shadow(0 1px 6px rgba(0,0,0,.7))}
+  @keyframes cueBounce{0%,100%{transform:translateY(0);opacity:.65}50%{transform:translateY(7px);opacity:1}}
+  body.opened .scroll-cue{animation:cueIn 1.1s ease 3.4s backwards}
+  @keyframes cueIn{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
+  .welcome-block{margin-top:40px;text-align:center}
+  .day.sat .event .time{color:#ffe2ae}
+  @media (prefers-reduced-motion: reduce){
+    .hero-bg img,.sparkle,.lantern-glows span,.hero .names,.scroll-cue svg{animation:none!important}
+    .reveal{transition:none}
+    body.opened .scroll-cue{animation:none}
+    .envelope-screen.phase-glow .env-glowdisc,.envelope-screen.phase-glow .env-spread,.envelope-screen.phase-flood .env-flood{animation-duration:.01s!important;animation-delay:0s!important}
+    .seal{transition:none}
+  }
+  /* ——— Countdown centering fix, restored event photos & Hindu Traditions card ——— */
+  .cd.tick b#cd-s{margin-left:auto;margin-right:auto}
+  [lang="hi"]{font-family:"Noto Sans Devanagari","Jost",system-ui,sans-serif}
+  .flip-front .ev-photo,.cflip-front .ev-photo,.hflip-front .ev-photo{margin-top:12px}
+  .sf-body .ev-photo{margin-top:2px}
+  /* Traditions pair — Mexican Traditions (Reception) and Hindu Traditions side by side */
+  .celebrate{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch;background:transparent;border:none;box-shadow:none;padding:0}
+  .celebrate .event{display:flex;flex-direction:column}
+  /* The flip-inner must NOT be a growing flex item: flex:1 sets flex-basis:0%, which
+     overrides the height the script sets for the showing face, so a flipped card stayed
+     front-height and its tall back overflowed the Tradition panel instead of expanding
+     it. With flex:0 0 auto the script-set height is the inner's real height, the grid
+     row (stretched by default) follows it, and the panel grows and shrinks with the flip,
+     exactly like the Haldi/Sangeet cards. */
+  .celebrate .flip-inner{flex:0 0 auto;width:100%}
+  .celebrate .rflip-front,.celebrate .htflip-front{min-height:100%;display:flex;flex-direction:column}
+  .celebrate .rflip-front .flip-hint,.celebrate .htflip-front .flip-hint{margin-top:auto}
+  .celebrate .rflip-back,.celebrate .htflip-back{min-height:100%}
+  .ht-shloka{margin:16px auto 0;max-width:430px;border:1px solid rgba(201,150,46,.65);border-radius:10px;padding:14px 12px 12px;background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 3px rgba(255,255,255,.35)}
+  .ht-shloka .ht-shloka-hi{margin:0;font-size:clamp(1.15rem,4.5vw,1.35rem);line-height:1.65;font-weight:700;color:#7a1a2e}
+  .ht-shloka .ht-shloka-tr{margin:8px 0 0;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1rem;line-height:1.5;color:#7a1a2e}
+  .ht-shloka .ht-shloka-en{margin:8px 0 0;font-size:.92rem;line-height:1.55;color:#5b2330}
+  .ht-shloka span{display:block;margin-top:8px;font-family:"Jost",sans-serif;font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:#8a5a12;font-weight:600}
+  .htflip-front .ht-shloka + .ht-proverb{margin-top:12px}
+  .ht-expect{margin-top:18px;border-top:1px solid rgba(201,150,46,.45);padding-top:14px}
+  .ht-expect h5{margin:0 0 10px;font-size:1rem;letter-spacing:.2em;color:#c2255c;font-weight:600;text-align:center}
+  .ht-expect-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+  .ht-expect-grid div{font-size:.82rem;letter-spacing:.08em;font-weight:600;color:#6b4a1f;line-height:1.45;text-align:center}
+  .ht-expect-grid div span{display:block;font-size:1.3rem;margin-bottom:4px;color:#c9962e}
+  .ht-expect-grid div p{margin:4px 0 0;font-size:.85rem;font-weight:400;letter-spacing:0;line-height:1.5;color:var(--ink-soft);text-transform:none}
+  .celebrate .event{padding:0;border-bottom:none}
+  @media (max-width:900px){.celebrate{grid-template-columns:1fr}}
+  /* "Tradition" panel — one framed section hosting both traditions cards, title at the top */
+  .trad-panel{margin-top:26px;background:var(--surface);border:1px solid var(--gold);border-radius:14px;box-shadow:var(--shadow);padding:24px 22px 22px}
+  @media (max-width:640px){.trad-panel{padding:20px 14px 16px}}
+  .trad-head{text-align:center;font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:clamp(1.9rem,4.5vw,2.6rem);line-height:1.1;color:#b8860b;margin:0 0 18px}
+  .trad-head::before,.trad-head::after{content:"❖";color:var(--marigold);font-size:.42em;vertical-align:.55em;margin:0 .45em}
+  /* ——— Hindu Traditions flip card — warm cream & gold front with the Hindi proverb, cream back with the eight rituals in Hindi ——— */
+  .hindu-trad-event{perspective:1600px}
+  .hindu-trad-event.flipped .flip-inner{transform:rotateY(180deg)}
+  .htflip-front{position:relative;text-align:center;color:#5b2330;background:linear-gradient(165deg,#fff8e2 0%,#ffe9bd 32%,#ffd09e 58%,#ffb3c1 86%,#f78fb0 100%);border:1px solid #d97a1e;box-shadow:0 8px 22px rgba(201,90,20,.22)}
+  .htflip-front::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.45rem;line-height:1;color:#e07f13;opacity:.9}
+  .htflip-front::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.45rem;line-height:1;color:#d6336c;opacity:.9}
+  .htflip-front .ht-kicker{margin:10px 0 0;font-size:.8rem;letter-spacing:.28em;text-transform:uppercase;color:#7a5a16;font-weight:600;line-height:1.6}
+  .htflip-front .ht-title{margin:4px 0 0;font-family:"Jost",sans-serif;font-weight:600;line-height:1.15;color:#8a6a1f}
+  .htflip-front .ht-title .ht-magenta{display:block;font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(2.6rem,9vw,3.4rem);letter-spacing:0;text-transform:none;line-height:1.12;color:#c2255c}
+  .htflip-front .ht-title .ht-gold{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:clamp(1.45rem,6vw,1.95rem);letter-spacing:.14em;line-height:1.2;color:#b8860b;margin-top:2px;text-transform:uppercase}
+  .htflip-front .ht-facts{margin:14px 0 0;font-size:.92rem;font-weight:600;color:#7a2b12;line-height:1.55}
+  .htflip-front .ht-body{margin:12px auto 0;max-width:430px;font-size:.97rem;line-height:1.6;color:#5b2330}
+  .htflip-front .ht-proverb{margin:16px auto 0;max-width:430px;border-top:1px solid rgba(201,150,46,.55);border-bottom:1px solid rgba(201,150,46,.55);padding:14px 10px 12px;background:rgba(255,255,255,.35)}
+  .htflip-front .ht-proverb .ht-hindi{margin:0;font-size:clamp(1.55rem,6.5vw,2rem);line-height:1.5;font-weight:700;color:#7a1a2e}
+  .htflip-front .ht-proverb .ht-translit{margin:8px 0 0;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.12rem;line-height:1.45;color:#7a1a2e}
+  .htflip-front .ht-proverb .ht-translation{margin:4px 0 0;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.05rem;line-height:1.45;color:#5b2330}
+  .htflip-front .ht-proverb span{display:block;margin-top:8px;font-family:"Jost",sans-serif;font-style:normal;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:#8a5a12;font-weight:600}
+  .htflip-back{position:absolute;top:0;left:0;width:100%;transform:rotateY(180deg);text-align:center;color:var(--ink);background:linear-gradient(170deg,#fffdf4,#fdf6e0);border:1px solid var(--gold);box-shadow:inset 0 0 0 4px #fffdf4,inset 0 0 0 5px rgba(201,150,46,.55),0 8px 22px rgba(122,26,46,.14)}
+  .htflip-back::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.3rem;line-height:1;color:#e07f13;opacity:.85}
+  .htflip-back::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.3rem;line-height:1;color:#d6336c;opacity:.85}
+  .htflip-back .htb-title{margin:2px 0 0;font-family:"Jost",sans-serif;font-size:1.0rem;letter-spacing:.2em;text-transform:uppercase;color:#6b5a2a;font-weight:600;line-height:1.5}
+  .htflip-back .htb-title .htb-big{display:block;font-family:"Great Vibes",cursive;font-size:clamp(2.2rem,8.5vw,2.7rem);letter-spacing:0;text-transform:none;line-height:1.12;color:#d6336c;margin-top:2px;font-weight:400}
+  .rflip-back .rb-title .rb-line1,.htflip-back .htb-title .htb-line1{display:block}
+  .rflip-back .rb-title .rb-trad,.htflip-back .htb-title .htb-big{white-space:nowrap}
+  .ht-item{margin-top:16px;border-top:1px solid rgba(201,150,46,.45);padding-top:14px;text-align:left;max-width:460px;margin-left:auto;margin-right:auto}
+  .ht-item:first-of-type{border-top:none;padding-top:4px}
+  .ht-item h5{margin:0;font-size:1.05rem;line-height:1.5;color:#c2255c;font-weight:700;text-align:center}
+  .ht-item h5 .ht-en{font-family:"Jost",sans-serif;font-size:.82rem;letter-spacing:.1em;font-weight:600;color:#8a5a12}
+  .ht-item p{margin:6px 0 0;font-size:.93rem;line-height:1.55;color:var(--ink-soft)}
+  .ht-close{margin:18px auto 0;max-width:440px;border-top:1px solid rgba(201,150,46,.45);padding-top:14px;font-size:1rem;line-height:1.55;color:#7a1a2e;font-weight:600}
+  .htflip-back .flip-hint{background:transparent;color:var(--maroon)}
+  .htflip-back .flip-hint:hover{background:var(--surface2)}
+  @media print{.htflip-back{display:none}}
+  /* ——— Reception flip card — "The Reception": standalone card above the Tradition panel; ivory & gold front with the ballroom photo (Catholic-card family), cream & gold back with the evening's food, pictures, dance and fun. Tap to flip; the box resizes to the face showing. ——— */
+  .party-event{perspective:1600px;max-width:680px;margin:26px auto 0}
+  .party-event.flipped .flip-inner{transform:rotateY(180deg)}
+  .rcp-front{position:relative;text-align:center;color:var(--ink);background:linear-gradient(175deg,#fffef9 0%,#fdf8ec 46%,#fbf0d8 100%);border:1px solid var(--gold);box-shadow:inset 0 0 0 4px #fffef9,inset 0 0 0 5px rgba(201,150,46,.5),0 8px 22px rgba(122,26,46,.16)}
+  .rcp-front::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.3rem;line-height:1;color:#c9a86a;opacity:.9}
+  .rcp-front::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.3rem;line-height:1;color:#d8a7b0;opacity:.9}
+  .rcp-front .rcp-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .rcp-front .rcp-time{font-weight:600;letter-spacing:.05em;color:#7a5a16;background:rgba(255,255,255,.65);border:1px solid rgba(201,150,46,.6);padding:2px 12px;border-radius:999px;font-size:.9rem;white-space:nowrap}
+  .rcp-front .ev-photo{margin-top:12px}
+  .rcp-front .rcp-orn{margin:10px 0 0;font-size:1.05rem;line-height:1;color:#b8860b}
+  .rcp-front .rcp-title{margin:4px 0 0;font-family:"Jost",sans-serif;font-weight:600;line-height:1.15;color:#8a6a1f}
+  .rcp-front .rcp-title .rcp-script{display:block;font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(2.9rem,10vw,3.7rem);line-height:1.12;color:#c2255c}
+  .rcp-front .rcp-title .rcp-gold{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:clamp(1.05rem,4.6vw,1.45rem);letter-spacing:.14em;line-height:1.3;color:#b8860b;margin-top:4px;text-transform:uppercase}
+  .rcp-front .rcp-body{margin:12px auto 0;max-width:430px;font-size:.97rem;line-height:1.62;color:#4a3520}
+  .rcp-front .rcp-facts{margin:14px 0 0;font-size:.92rem;font-weight:600;color:#7a4a12;line-height:1.55}
+  .rcp-back{position:absolute;top:0;left:0;width:100%;transform:rotateY(180deg);text-align:center;color:var(--ink);background:linear-gradient(170deg,#fffdf4,#fdf6e0);border:1px solid var(--gold);box-shadow:inset 0 0 0 4px #fffdf4,inset 0 0 0 5px rgba(201,150,46,.55),0 8px 22px rgba(122,26,46,.14)}
+  .rcp-back::before{content:"❀";position:absolute;top:8px;left:12px;font-size:1.3rem;line-height:1;color:#e07f13;opacity:.85}
+  .rcp-back::after{content:"❀";position:absolute;top:8px;right:12px;font-size:1.3rem;line-height:1;color:#d6336c;opacity:.85}
+  .rcp-back .rcp-btitle{margin:2px 0 0;font-family:"Jost",sans-serif;font-weight:600;line-height:1.5}
+  .rcp-back .rcp-btitle .rcp-bscript{display:block;font-family:"Great Vibes",cursive;font-weight:400;font-size:clamp(2.3rem,8.5vw,2.8rem);letter-spacing:0;line-height:1.12;color:#c2255c}
+  .rcp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:15px 16px;margin-top:16px}
+  .rcp-mean .rcp-ico{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin:0 auto 6px;border:1px solid var(--gold);border-radius:50%;background:#fffaf0;color:#c9962e;font-size:1.25rem;line-height:1}
+  .rcp-mean h5{margin:0;font-size:.92rem;letter-spacing:.12em;color:#c2255c;font-weight:600}
+  .rcp-mean p{margin:4px 0 0;font-size:.88rem;line-height:1.5;color:var(--ink-soft)}
+  .rcp-sec{margin-top:18px;border-top:1px solid rgba(201,150,46,.45);padding-top:14px}
+  .rcp-sec h5{margin:0 0 10px;font-size:1rem;letter-spacing:.2em;color:#c2255c;font-weight:600}
+  .rcp-expect-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px}
+  .rcp-expect-grid div{font-size:.82rem;letter-spacing:.08em;font-weight:600;color:#6b4a1f;line-height:1.45}
+  .rcp-expect-grid div span{display:block;font-size:1.3rem;margin-bottom:4px;color:#c9962e}
+  .rcp-close{margin:18px auto 0;max-width:440px;border-top:1px solid rgba(201,150,46,.45);padding-top:14px;font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:1.12rem;line-height:1.55;color:#7a1a2e}
+  .rcp-back .flip-hint{background:transparent;color:var(--maroon)}
+  .rcp-back .flip-hint:hover{background:var(--surface2)}
+  @media print{.rcp-back{display:none}}
+  @media print{
+    .hero{min-height:auto}
+    .hero-bg,.hero-flash,#glitter,.lantern-glows,.scroll-cue{display:none!important}
+    .hero-content{padding:30px 10px;transform:none}
+    .reveal{opacity:1;transform:none}
+    .hero .families,.hero .tagline,.hero .dateline,.hero .blessing{color:#4a1f26;text-shadow:none}
+    .hero .dateline strong{color:#4a1f26}
+    .hero .names{color:#a82b43;-webkit-text-fill-color:#a82b43;animation:none;filter:none}
+  }
 </style>
 </head>
 <body>
-<noscript><style>.envelope-screen{display:none}</style></noscript>
+<noscript><style>.envelope-screen{display:none}.hero-flash{display:none}.reveal{opacity:1!important;transform:none!important}.scroll-cue{display:none}</style></noscript>
 
 <!-- OPENING GATES — two maroon folk-art doors closed at the centre seam by one wax seal; no front card -->
-<div class="envelope-screen" id="envelope" role="dialog" aria-modal="true" aria-label="Wedding invitation — break the wax seal to open the gates">
+<div class="envelope-screen" id="envelope" role="dialog" aria-modal="true" aria-label="Wedding invitation — tap the wax seal to open">
   <div class="garland" aria-hidden="true"><span>❀</span><span>✦</span><span>❀</span><span>✦</span><span>❀</span><span>✦</span><span>❀</span><span>✦</span><span>❀</span><span>✦</span><span>❀</span></div>
   <div class="gates" aria-hidden="true">
     <div class="gate gate-l"><span class="g-knob"></span></div>
     <div class="gate gate-r"><span class="g-knob"></span></div>
   </div>
-  <button class="seal" id="seal" type="button" aria-label="Break the wax seal and open the invitation gates"><span class="drip d1" aria-hidden="true"></span><span class="drip d2" aria-hidden="true"></span><span class="crack" aria-hidden="true"></span><span class="seal-mono">S &amp; S</span></button>
-  <p class="env-press">Break the wax seal to open the gates</p>
+  <div class="env-spread" aria-hidden="true"></div>
+  <div class="env-glowdisc" aria-hidden="true"></div>
+  <div class="env-flood" aria-hidden="true"></div>
+  <button class="seal" id="seal" type="button" aria-label="Tap the wax seal to open the invitation"><img src="assets/asset-01.png" alt="The couple's red wax seal — gold S and S monogram, Susan and Shivam, 23–24 April 2027" /></button>
+  <p class="env-press">Tap the wax seal to open</p>
   <button class="env-skip" type="button" id="env-skip">Open without music</button>
 </div>
 
 <div class="petals" id="petals" aria-hidden="true"></div>
 
-<div class="wrap">
-
-  <!-- HERO — the couple's own Canva invitation cover -->
-  <header class="hero">
-    <div class="cover">
-      <img src="assets/asset-01.png" alt="Shivam and Susan's own invitation cover: an ivory and gold arch with maroon florals and marigolds, reading 'Together with our families — Shivam &amp; Susan — Two hearts. Two traditions. One beautiful beginning. April 23–24, 2027, Long Beach &amp; Norwalk, California — Con amor y bendiciones, With love and blessings'" />
+<!-- HERO — Style A: the strawberry floral archway, animated once the invitation opens -->
+<header class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"><img src="assets/asset-02.jpg" alt="" fetchpriority="high" /></div>
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div id="glitter" aria-hidden="true"></div>
+    <div class="lantern-glows" aria-hidden="true"><span style="--x:20%;--y:40%"></span><span style="--x:31%;--y:57%"></span><span style="--x:45%;--y:34%"></span><span style="--x:61%;--y:37%"></span><span style="--x:65%;--y:48%"></span><span style="--x:70%;--y:57%"></span></div>
+    <div class="hero-flash" aria-hidden="true"></div>
+    <div class="hero-content">
+    <p class="families reveal rv-fam">Together with our families</p>
+    <h1 class="names reveal rv-names">Susan <span class="amp">&amp;</span> Shivam</h1>
+    <p class="tagline reveal rv-tag">Two hearts. Two traditions. One beautiful beginning.</p>
+    <p class="dateline reveal rv-date"><strong>April 23–24, 2027</strong><br />Long Beach &amp; Norwalk, California</p>
+    <p class="blessing reveal rv-bless">Con amor y bendiciones • With love and blessings</p>
     </div>
-    <p class="families">Together with our families</p>
-    <h1 class="names">Shivam <span class="amp">&amp;</span> Susan</h1>
-    <p class="tagline">Two hearts. Two traditions. One beautiful beginning.</p>
-    <p class="dateline"><strong>April 23–24, 2027</strong><br />Long Beach &amp; Norwalk, California</p>
-    <p class="blessing">Con amor y bendiciones • With love and blessings</p>
+    <button class="scroll-cue" id="scroll-cue" type="button"><span>Scroll to RSVP</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+</header>
 
-    <div class="countdown" aria-label="Countdown to the Hindu Wedding Ceremony">
+<div class="wrap">
+  <!-- COUNTDOWN & QUICK LINKS -->
+  <section class="welcome-block" id="welcome">
+    <div class="countdown" aria-label="Countdown to the Wedding Ceremony">
       <div class="cd"><b id="cd-d">—</b><span>Days</span></div>
       <div class="cd"><b id="cd-h">—</b><span>Hours</span></div>
       <div class="cd"><b id="cd-m">—</b><span>Minutes</span></div>
       <div class="cd"><b id="cd-s">—</b><span>Seconds</span></div>
     </div>
-    <p style="color:var(--ink-soft);font-size:.9rem;margin:2px 0 0">until the Hindu Wedding Ceremony · Saturday, April 24 at 4:00 PM</p>
+    <p style="color:var(--ink-soft);font-size:.9rem;margin:2px 0 0">until the Wedding Ceremony · Saturday, April 24 at 4:00 PM</p>
 
     <div class="hero-actions">
       <button class="btn" type="button" id="cal-weekend">Add the weekend to my calendar</button>
@@ -341,17 +776,14 @@
       <a class="btn ghost" href="#explore">Explore Long Beach</a>
     </div>
     <div class="rule" aria-hidden="true">✦</div>
-  </header>
+  </section>
 
   <!-- ABOUT THE COUPLE -->
   <section id="about">
-    <div class="sec-head">
-      <h2>About Shivam &amp; Susan</h2>
-    </div>
     <div class="about-card">
-      <p class="a-names">Shivam &amp; Susan</p>
+      <p class="a-names">Susan &amp; Shivam</p>
       <div class="a-florals" aria-hidden="true">❀ ✦ ❀</div>
-      <p><b>Shivam Dixit</b> and <b>Susan Lizbeth Ruiz Hidalgo</b> are bringing the two traditions at the heart of their families together in one wedding weekend — Shivam's Indian heritage and Susan's Mexican heritage, celebrated side by side with the people they love most.</p>
+      <p><b>Susan Lizbeth Ruiz Hidalgo</b> and <b>Shivam Dixit</b> are bringing the two traditions at the heart of their families together in one wedding weekend — Susan's Mexican heritage and Shivam's Indian heritage, celebrated side by side with the people they love most.</p>
       <p>Across two days in Long Beach and Norwalk, their families will gather for the colors of the Haldi, a night of music at the Sangeet, a Catholic ceremony honoring Susan's faith, and a Hindu ceremony under the mandap — two ceremonies, one love, and, in the words of their own invitation, “with the blessings of God and Lord Ganesha and the love of our families.”</p>
       <p style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1.2rem;color:var(--rose)">Two hearts. Two traditions. One beautiful beginning.</p>
     </div>
@@ -369,31 +801,127 @@
           <div class="dow">Friday, April 23, 2027</div>
           <h3>Celebrate the Colors &amp; Music</h3>
         </div>
-        <div class="event">
-          <div class="row">
-            <div>
-              <img class="ev-photo" src="assets/asset-02.jpg" alt="A Haldi thali close-up: a decorated golden tray holding a bowl of turmeric paste scattered with marigold and rose petals, surrounded by marigold petals — no people, just the ceremony details" loading="lazy" />
-              <div class="time">10:00 AM</div>
-              <h4>Haldi</h4>
-              <p>Marriott Long Beach Downtown</p>
-              <p class="about">A joyful blessing ceremony where family and friends apply a turmeric (haldi) paste to the couple for glow, luck and protection. Come ready for color, laughter and photos — cheerful yellows and festive colors are perfect, and expect to get a little turmeric on you too.</p>
+        <div class="event haldi-event" id="haldi-card">
+          <div class="flip-inner">
+            <div class="flip-face flip-front">
+              <div class="hf-top">
+                <span class="hf-time">10:00 AM &ndash; 2:00 PM</span>
+                <button class="btn small ghost" type="button" data-ics="haldi">Add</button>
+              </div>
+              <img class="ev-photo" src="assets/asset-03.jpg" alt="A Haldi ceremony tray: a bowl of golden turmeric paste scattered with marigold and rose petals on a decorated yellow cloth" loading="lazy" />
+              <h4 class="hf-title"><span class="sol">Sol</span> <span class="y">y</span> <span class="haldiw">Haldi</span></h4>
+              <p class="hf-sub">A joyful celebration of love, blessings and new beginnings</p>
+              <p class="hf-body">Haldi is a beautiful pre-wedding tradition from Indian culture where family and friends apply a turmeric-based paste to the bride and groom. In our celebration, we bring together the warmth of Mexican traditions and the beauty of Indian customs for a vibrant morning filled with sunshine, love and togetherness.</p>
+              <p class="hf-facts">Dawson Ballroom, Marriott Long Beach Downtown</p>
+              <button class="flip-hint" type="button" aria-expanded="false">Tap to flip <span aria-hidden="true">↻</span></button>
             </div>
-            <button class="btn small ghost" type="button" data-ics="haldi">Add</button>
+            <div class="flip-face flip-back" aria-hidden="true">
+              <h4 class="hb-title"><span class="hb-haldi">Haldi</span></h4>
+              <div class="hb-grid">
+                <div class="hb-mean">
+                  <img class="hb-pic" src="assets/asset-04.png" width="344" height="280" alt="A brass bowl of golden turmeric powder with fresh turmeric roots and green leaves, in a gold arch frame" loading="lazy" />
+                  <h5>PURITY</h5>
+                  <p>Turmeric symbolizes purity and spiritual cleansing as the couple prepares for marriage.</p>
+                </div>
+                <div class="hb-mean">
+                  <img class="hb-pic" src="assets/asset-05.png" width="344" height="280" alt="A golden sun with rays, in a gold arch frame" loading="lazy" />
+                  <h5>GOOD HEALTH</h5>
+                  <p>It is believed to bring good health, happiness and protection for the bride and groom's new journey together.</p>
+                </div>
+                <div class="hb-mean">
+                  <img class="hb-pic" src="assets/asset-06.png" width="344" height="280" alt="A pink lotus flower in bloom, in a gold arch frame" loading="lazy" />
+                  <h5>PROSPERITY</h5>
+                  <p>The golden color represents prosperity, positivity, and new beginnings.</p>
+                </div>
+                <div class="hb-mean">
+                  <img class="hb-pic" src="assets/asset-07.png" width="344" height="280" alt="Two interlocked gold hearts, in a gold arch frame" loading="lazy" />
+                  <h5>LOVE &amp; UNITY</h5>
+                  <p>Surrounded by family and friends, Haldi is a time to give blessings, share joy and strengthen the bond between two families.</p>
+                </div>
+              </div>
+              <div class="hb-sec">
+                <h5>WHAT TO EXPECT</h5>
+                <img class="hb-photo hb-photo-expect" src="assets/asset-08.jpg" alt="A Haldi celebration setting: a wide brass bowl of golden turmeric paste ringed with marigold flowers, smaller brass bowls of turmeric beside it and marigold garlands hanging behind" loading="lazy" />
+                <p class="hb-item"><b>A JOYFUL ATMOSPHERE</b>Expect music, laughter, colorful décor and lots of love.</p>
+                <p class="hb-item"><b>THE HALDI RITUAL</b>Family and loved ones will take turns applying turmeric to the bride and groom's face, arms and hands while giving their blessings.</p>
+                <p class="hb-item"><b>FOOD &amp; REFRESHMENTS</b>Enjoy light bites, refreshing drinks and time to celebrate together before the wedding weekend continues.</p>
+              </div>
+              <div class="hb-sec">
+                <h5>WHAT TO WEAR</h5>
+                <img class="hb-photo hb-photo-wear" src="assets/asset-09.webp" width="1280" height="1920" alt="Haldi outfit inspiration: a men's cream and gold Nehru jacket with kurta and a women's golden-yellow embroidered anarkali gown with a fitted bodice and dupatta, hanging side by side on a brass rail with a bowl of marigolds — garments only, no people" loading="lazy" />
+                <p class="hb-wear">We kindly invite our guests to wear shades of yellow, gold or warm, bright colors to join in the spirit of Haldi and celebrate the beauty and joy of this tradition.</p>
+              </div>
+              <button class="flip-hint" type="button" aria-expanded="true" tabindex="-1">Tap to flip back <span aria-hidden="true">↻</span></button>
+            </div>
           </div>
         </div>
-        <div class="event">
-          <div class="row">
-            <div>
-              <img class="ev-photo" src="assets/asset-03.webp" alt="An empty Sangeet stage ready for the night: red, orange and teal drapes, glowing chandeliers, flower arrangements and cushions on a polished dance floor — no people" loading="lazy" />
-              <div class="time">6:00 PM – Midnight</div>
-              <h4>Sangeet</h4>
-              <p>Pike Ballroom · Marriott Long Beach Downtown</p>
-              <p class="about">An evening of music and dance where both families celebrate the couple with performances, favorite songs and a full dance floor. Dress festive and bright, bring your dancing shoes — and if your family would like to perform a number for Shivam &amp; Susan, this is your night.</p>
+        <div class="event sangeet-event" id="sangeet-card">
+          <div class="flip-inner">
+            <div class="flip-face sflip-front">
+              <div class="sf-head">
+                <span class="bc-lantern l1" aria-hidden="true"></span>
+                <span class="bc-lantern l2" aria-hidden="true"></span>
+                <span class="bc-lantern l3" aria-hidden="true"></span>
+                <span class="bc-lantern l4" aria-hidden="true"></span>
+                <div class="bc-top">
+                  <span class="bc-time">6:00 PM – Midnight</span>
+                  <button class="btn small ghost" type="button" data-ics="sangeet">Add</button>
+                </div>
+              </div>
+              <div class="sf-body">
+                <img class="ev-photo" src="assets/asset-10.webp" alt="A Sangeet stage dressed for the evening: red, orange and teal drapes, glowing lanterns, flower arrangements and a dhol drum beside the dance floor" loading="lazy" />
+                <h4 class="sf-title"><span class="sf-script">Una Noche de</span> <span class="sf-title-big">Sangeet</span></h4>
+                <p class="sf-sub">A night of music, dance and togetherness</p>
+                <p class="sf-p">The Sangeet is a joyful pre-wedding celebration from Indian culture where family and friends come together to celebrate the couple through music, dance and performances.</p>
+                <p class="sf-p">It&rsquo;s a night filled with energy, laughter and love as both families unite, share their cultures and create unforgettable memories before the wedding.</p>
+                <div class="sf-blends">
+                  <h5>Our Sangeet Blends Two Cultures</h5>
+                  <p>We&rsquo;re bringing together the vibrancy of Indian traditions and the warmth of Mexican celebrations &mdash; with lively music, colorful d&eacute;cor, delicious food and an evening dedicated to love, family and togetherness.</p>
+                </div>
+                <p class="sf-facts">Pike Ballroom, Marriott Long Beach Downtown</p>
+                <button class="flip-hint" type="button" aria-expanded="false">Tap to flip <span aria-hidden="true">&#8635;</span></button>
+              </div>
             </div>
-            <button class="btn small ghost" type="button" data-ics="sangeet">Add</button>
+            <div class="flip-face sflip-back" aria-hidden="true">
+              <h4 class="sb-title"><span class="sb-sangeet">Sangeet</span></h4>
+              <div class="sb-grid">
+                <div class="sb-mean">
+                  <span class="sb-ico" aria-hidden="true">&#9835;</span>
+                  <h5>CELEBRATION</h5>
+                  <p>A time to honor the couple with music, dance and performances from family and friends.</p>
+                </div>
+                <div class="sb-mean">
+                  <span class="sb-ico" aria-hidden="true">&#10047;</span>
+                  <h5>TOGETHERNESS</h5>
+                  <p>Brings both families together to strengthen bonds and create joyful memories.</p>
+                </div>
+                <div class="sb-mean">
+                  <span class="sb-ico" aria-hidden="true">&hearts;</span>
+                  <h5>JOY &amp; BLESSINGS</h5>
+                  <p>The performances and celebrations symbolize love, happiness and good fortune for the couple&rsquo;s new journey.</p>
+                </div>
+                <div class="sb-mean">
+                  <span class="sb-ico" aria-hidden="true">&#10048;</span>
+                  <h5>CULTURAL HARMONY</h5>
+                  <p>A beautiful blend of Indian and Mexican traditions, uniting our families and cultures.</p>
+                </div>
+              </div>
+              <div class="sb-sec">
+                <h5>WHAT TO EXPECT</h5>
+                <p class="sb-item"><b>LIVE MUSIC &amp; DANCING</b>A high-energy night with Bollywood beats, traditional songs and fun for everyone.</p>
+                <p class="sb-item"><b>FAMILY PERFORMANCES</b>Special dance performances by both families to celebrate our love and cultures.</p>
+                <p class="sb-item"><b>DELICIOUS FOOD &amp; DRINKS</b>A variety of flavorful dishes and refreshing drinks to enjoy throughout the evening.</p>
+                <p class="sb-item"><b>A FESTIVE ATMOSPHERE</b>Colorful d&eacute;cor, vibrant lighting and a night full of laughter, joy and celebration.</p>
+              </div>
+              <div class="sb-sec">
+                <h5>ATTIRE INSPIRATION</h5>
+                <p class="sb-attire">We invite our guests to wear colorful Indian or fusion attire. Think vibrant colors, elegant fabrics and festive details that make you feel comfortable to dance the night away!</p>
+              </div>
+              <button class="flip-hint" type="button" aria-expanded="true" tabindex="-1">Tap to flip back <span aria-hidden="true">&#8635;</span></button>
+            </div>
           </div>
         </div>
-        <p class="quote" style="margin:0;padding:14px 22px 18px;text-align:left">“Golden moments by day, music and dancing by night.”</p>
+        <p class="quote" style="margin:auto 0 0;padding:14px 22px 18px;text-align:left">“Golden moments by day, music and dancing by night.”</p>
       </article>
 
       <article class="day sat">
@@ -401,58 +929,335 @@
           <div class="dow">Saturday, April 24, 2027</div>
           <h3>Two Ceremonies, One Love</h3>
         </div>
-        <div class="event">
-          <div class="row">
-            <div>
-              <img class="ev-photo" src="assets/asset-04.png" alt="An empty church interior: rows of wooden pews leading down a tiled aisle to a white altar with flowers, beneath arched ceilings and a crucifix — quiet and people-free" loading="lazy" />
-              <div class="time">11:00 AM</div>
-              <h4>Catholic Wedding Ceremony</h4>
-              <p>Norwalk, California — <em>Church details to follow</em></p>
-              <p class="about">Susan and Shivam exchange vows in a Catholic wedding Mass, honoring Susan's faith and her Mexican heritage, with readings, blessings and the exchange of rings before family and friends.</p>
+        <div class="event catholic-event" id="catholic-card">
+          <div class="flip-inner">
+            <div class="flip-face cflip-front">
+              <div class="cf-top">
+                <span class="cf-time">10:00 AM &ndash; 11:00 AM</span>
+                <button class="btn small ghost" type="button" data-ics="catholic">Add</button>
+              </div>
+              <img class="ev-photo" src="assets/asset-11.png" alt="Inside a Catholic church: wooden pews lining a marble aisle toward the altar, crucifix and white floral arrangements" loading="lazy" />
+              <p class="cf-cross" aria-hidden="true">&#10013;</p>
+              <h4 class="cf-title"><span class="cf-script">The Catholic</span> <span class="cf-gold">Wedding Ceremony</span></h4>
+              <p class="cf-rule" aria-hidden="true">&#10022; &#10022; &#10022;</p>
+              <p class="cf-sub">A sacred celebration of faith, love and commitment</p>
+              <p class="cf-body">Our Catholic wedding ceremony is a sacred sacrament that unites us in the presence of God, our family and our community. Through prayer, readings, vows and blessings, we will ask for God&rsquo;s guidance as we begin our married life together.</p>
+              <div class="cf-quote">
+                <p>&ldquo;Therefore what God has joined together, let no one separate.&rdquo;</p>
+                <span>Mark 10:9</span>
+              </div>
+              <p class="cf-facts">St. John of God Catholic Church<br />13819 Pioneer Blvd, Norwalk, CA 90650, United States</p>
+              <button class="flip-hint" type="button" aria-expanded="false">Tap to flip <span aria-hidden="true">&#8635;</span></button>
             </div>
-            <button class="btn small ghost" type="button" data-ics="catholic">Add</button>
+            <div class="flip-face cflip-back" aria-hidden="true">
+              <p class="cb-cross" aria-hidden="true">&#10013;</p>
+              <h4 class="cb-title"><span class="cb-script">Catholic Ceremony</span></h4>
+              <div class="cb-grid">
+                <div class="cb-mean">
+                  <span class="cb-ico" aria-hidden="true">&#10019;</span>
+                  <h5>THE SACRAMENT OF MARRIAGE</h5>
+                  <p>Marriage is a sacred covenant before God, a lifelong commitment to love, honor and support each other through all of life&rsquo;s joys and challenges.</p>
+                </div>
+                <div class="cb-mean">
+                  <span class="cb-ico" aria-hidden="true">&#10013;</span>
+                  <h5>THE MASS</h5>
+                  <p>We celebrate the Eucharist together, giving thanks to God and asking for His blessings as we begin our married life.</p>
+                </div>
+                <div class="cb-mean">
+                  <span class="cb-ico" aria-hidden="true">&#10022;</span>
+                  <h5>SCRIPTURE READINGS</h5>
+                  <p>Readings from the Bible remind us of the beauty of love, faith and commitment.</p>
+                </div>
+                <div class="cb-mean">
+                  <span class="cb-ico" aria-hidden="true">&hearts;</span>
+                  <h5>OUR VOWS</h5>
+                  <p>We will exchange vows, publicly expressing our love and promise to walk together in faith for a lifetime.</p>
+                </div>
+                <div class="cb-mean">
+                  <span class="cb-ico" aria-hidden="true">&infin;</span>
+                  <h5>THE LAZO</h5>
+                  <p>A traditional Hispanic custom where a rosary is placed around our shoulders in the shape of a figure eight, symbolizing our unity and eternal love.</p>
+                </div>
+                <div class="cb-mean">
+                  <span class="cb-ico" aria-hidden="true">&#9673;</span>
+                  <h5>LAS ARRAS</h5>
+                  <p>Thirteen coins are blessed and exchanged, representing our shared responsibility, prosperity and care for our future together.</p>
+                </div>
+                <div class="cb-mean">
+                  <span class="cb-ico" aria-hidden="true">&#10023;</span>
+                  <h5>THE BLESSING</h5>
+                  <p>We will receive a special blessing from the priest for a happy, healthy and faith-filled marriage.</p>
+                </div>
+                <div class="cb-mean">
+                  <span class="cb-ico" aria-hidden="true">&#10016;</span>
+                  <h5>HOLY COMMUNION</h5>
+                  <p>We join in receiving the Eucharist, a symbol of God&rsquo;s love and the spiritual foundation of our marriage.</p>
+                </div>
+              </div>
+              <div class="cb-prayer">
+                <span class="cb-prayer-cross" aria-hidden="true">&#10013;</span>
+                <h5>Susan &amp; Shivam&rsquo;s Prayer</h5>
+                <p>Following the ceremony, Susan and Shivam will share a special prayer they wrote together during their marriage retreat. This personal prayer will be shared in church as a meaningful part of their celebration.</p>
+              </div>
+              <button class="flip-hint" type="button" aria-expanded="true" tabindex="-1">Tap to flip back <span aria-hidden="true">&#8635;</span></button>
+            </div>
           </div>
         </div>
-        <div class="event">
-          <div class="row">
-            <div>
-              <img class="ev-photo" src="assets/asset-05.png" alt="An empty golden temple mandap: ornate gold pillars and roof covered in white, pink and red flowers, two white ceremonial chairs beneath a golden Ganesha, with brass lamps and flower petals lining the aisle — no people" loading="lazy" />
-              <div class="time">4:00 PM</div>
-              <h4>Hindu Wedding Ceremony</h4>
-              <p>Bixby Ballroom · Marriott Long Beach Downtown</p>
-              <p class="about">Under a flower-decked mandap, the couple exchange garlands and take seven steps (saptapadi) around a sacred fire, each step a vow for their life together. The celebration begins with the baraat — Shivam's joyful arrival procession with music and dancing on the promenade. Guests are welcome to witness every ritual; festive Indian or formal attire both fit beautifully.</p>
+        <div class="event hindu-event" id="hindu-card">
+          <div class="flip-inner">
+            <div class="flip-face hflip-front">
+              <div class="hu-top">
+                <span class="hu-time">4:00 PM &ndash; 6:00 PM</span>
+                <button class="btn small ghost" type="button" data-ics="hindu">Add</button>
+              </div>
+              <img class="ev-photo" src="assets/asset-12.png" alt="A golden Hindu wedding mandap adorned with marigold and rose garlands, brass lamps and two ceremonial chairs beneath a floral canopy" loading="lazy" />
+              <p class="hu-orn" aria-hidden="true">❖</p>
+              <h4 class="hu-title"><span class="hu-script">The Hindu</span> <span class="hu-gold">Wedding Ceremony</span></h4>
+              <p class="hu-sub">A sacred union of traditions, two cultures, one love</p>
+              <h5 class="hu-journey">A Sacred Journey Together</h5>
+              <p class="hu-body">Our Hindu wedding ceremony is a beautiful and meaningful tradition where we are united in the presence of family, friends and the divine. Through sacred rituals, prayers and blessings, we begin our married life together and seek guidance for a future filled with love, happiness, prosperity and a strong partnership.</p>
+              <div class="hu-blend">
+                <h5>A Blend of Cultures</h5>
+                <p>We are honored to incorporate our Indian and Mexican heritage as we celebrate love, family and new beginnings. This ceremony reflects our shared values, our unique backgrounds and the beauty of bringing two cultures together as one family.</p>
+              </div>
+              <p class="hu-facts">Bixby Ballroom, Marriott Long Beach Downtown</p>
+              <button class="flip-hint" type="button" aria-expanded="false">Tap to flip <span aria-hidden="true">↻</span></button>
             </div>
-            <button class="btn small ghost" type="button" data-ics="hindu">Add</button>
+            <div class="flip-face hflip-back" aria-hidden="true">
+              <h4 class="hub-title"><span class="hub-big">Hindu Ceremony</span></h4>
+              <p class="hub-sub">Sacred rituals, timeless blessings</p>
+              <div class="hub-grid">
+                <div class="hub-mean">
+                  <img class="hub-pic" src="assets/asset-13.png" width="188" height="176" alt="A golden statue of Lord Ganesha seated among marigold and rose flowers, in a gold arch frame" loading="lazy" />
+                  <h5>GANESH PUJA</h5>
+                  <p>We begin by praying to Lord Ganesha, remover of obstacles, for a smooth and blessed married life.</p>
+                </div>
+                <div class="hub-mean">
+                  <img class="hub-pic" src="assets/asset-14.png" width="188" height="176" alt="A garland of red, pink, yellow and white flowers hanging against a cream sherwani, in a gold arch frame" loading="lazy" />
+                  <h5>JAI MALA</h5>
+                  <p>We exchange flower garlands, symbolizing acceptance, respect and the start of our journey together.</p>
+                </div>
+                <div class="hub-mean">
+                  <img class="hub-pic" src="assets/asset-15.png" width="188" height="176" alt="Two hands cupped together over the flames of the sacred fire, in a gold arch frame" loading="lazy" />
+                  <h5>KANYA DAAN</h5>
+                  <p>The bride&rsquo;s family gives their blessing and formally gives their daughter&rsquo;s hand in marriage, trusting her to her partner.</p>
+                </div>
+                <div class="hub-mean">
+                  <img class="hub-pic" src="assets/asset-16.png" width="188" height="176" alt="A sacred knot tying a white cloth and a deep red sash with gold borders together, in a gold arch frame" loading="lazy" />
+                  <h5>GRANTHI BANDHAN</h5>
+                  <p>A sacred knot is tied, symbolizing our souls and lives being joined together.</p>
+                </div>
+                <div class="hub-mean">
+                  <img class="hub-pic" src="assets/asset-17.png" width="188" height="162" alt="Flames rising from the sacred fire in a wide ceremonial bowl, in a gold arch frame" loading="lazy" />
+                  <h5>SACRED FIRE (AGNI)</h5>
+                  <p>We make offerings to the holy fire, a witness to our vows, for purity, strength and eternal love.</p>
+                </div>
+                <div class="hub-mean">
+                  <img class="hub-pic" src="assets/asset-18.png" width="188" height="162" alt="The bride and groom's feet standing on a floor scattered with flower petals, in a gold arch frame" loading="lazy" />
+                  <h5>SAPTAPADI</h5>
+                  <p>We take seven steps together, each representing a vow for a happy, healthy, prosperous and loving life.</p>
+                </div>
+                <div class="hub-mean">
+                  <img class="hub-pic" src="assets/asset-19.png" width="188" height="162" alt="Hands tying the mangalsutra around the bride's neck during the ceremony, in a gold arch frame" loading="lazy" />
+                  <h5>MANGALSUTRA &amp; SINDOOR</h5>
+                  <p>The groom places the mangalsutra and sindoor, symbols of love, commitment and protection.</p>
+                </div>
+                <div class="hub-mean">
+                  <img class="hub-pic" src="assets/asset-20.png" width="188" height="162" alt="Hands exchanging a small golden offering in blessing, in a gold arch frame" loading="lazy" />
+                  <h5>BLESSINGS</h5>
+                  <p>We receive the blessings of our family, loved ones and the divine for a lifetime of joy, unity and prosperity.</p>
+                </div>
+              </div>
+              <div class="hub-sec">
+                <h5>WHAT TO EXPECT</h5>
+                <div class="hub-expect-grid">
+                  <div><span aria-hidden="true">♪</span>TRADITIONAL MUSIC<p>Live music, sacred chants and a joyful atmosphere.</p></div>
+                  <div><span aria-hidden="true">❖</span>FAMILY INVOLVEMENT<p>Meaningful rituals with participation from both families.</p></div>
+                  <div><span aria-hidden="true">❀</span>VIBRANT DECOR<p>A beautifully decorated mandap with flowers, colors and cultural elements.</p></div>
+                  <div><span aria-hidden="true">♥</span>LOVE &amp; BLESSINGS<p>A heartfelt ceremony filled with tradition, joy and the support of our loved ones.</p></div>
+                </div>
+              </div>
+              <div class="hub-sec">
+                <h5>ATTIRE INSPIRATION</h5>
+                <p class="hub-attire">We invite our guests to wear traditional Indian attire in vibrant colors.</p>
+                <div class="hu-swatches" aria-hidden="true"><span class="w1"></span><span class="w2"></span><span class="w3"></span><span class="w4"></span><span class="w5"></span><span class="w6"></span><span class="w7"></span></div>
+              </div>
+              <button class="flip-hint" type="button" aria-expanded="true" tabindex="-1">Tap to flip back <span aria-hidden="true">↻</span></button>
+            </div>
           </div>
         </div>
+        <p class="quote" style="margin:auto 0 0;padding:14px 22px 18px;text-align:left">“Sacred vows by day, celebration by night.”</p>
       </article>
     </div>
 
+    <div class="party-event" id="party-card">
+      <div class="flip-inner">
+        <div class="flip-face rcp-front">
+          <div class="rcp-top">
+            <span class="rcp-time">6:00 PM &ndash; Midnight</span>
+            <button class="btn small ghost" type="button" data-ics="reception">Add</button>
+          </div>
+          <img class="ev-photo" src="assets/asset-21.jpg" alt="The ballroom set for the wedding reception: round tables in white linen with tall white rose centerpieces, candles, glassware and crystal chandeliers overhead" loading="lazy" />
+          <p class="rcp-orn" aria-hidden="true">❖</p>
+          <h4 class="rcp-title"><span class="rcp-script">The Reception</span> <span class="rcp-gold">Dinner, Dancing &amp; Celebration</span></h4>
+          <p class="rcp-body">A night where our Mexican and Hindu traditions come together — dinner, dancing and joy under one roof.</p>
+          <p class="rcp-facts">Bixby Ballroom, Marriott Long Beach Downtown</p>
+          <button class="flip-hint" type="button" aria-expanded="false">Tap to flip — an evening of celebration <span aria-hidden="true">↻</span></button>
+        </div>
+        <div class="flip-face rcp-back" aria-hidden="true">
+          <h4 class="rcp-btitle"><span class="rcp-bscript">An Evening of Celebration</span></h4>
+          <div class="rcp-grid">
+            <div class="rcp-mean">
+              <span class="rcp-ico" aria-hidden="true">❀</span>
+              <h5>FOOD</h5>
+              <p>A dinner blending the flavors of both our cultures, shared with everyone we love.</p>
+            </div>
+            <div class="rcp-mean">
+              <span class="rcp-ico" aria-hidden="true">✦</span>
+              <h5>PICTURES</h5>
+              <p>Golden moments through the night — family portraits, candid laughter and a photo corner to capture it all.</p>
+            </div>
+            <div class="rcp-mean">
+              <span class="rcp-ico" aria-hidden="true">♪</span>
+              <h5>DANCE</h5>
+              <p>Bollywood beats meet Mexican rhythms — our first dance, family performances and an open floor for everyone.</p>
+            </div>
+            <div class="rcp-mean">
+              <span class="rcp-ico" aria-hidden="true">☀</span>
+              <h5>FUN</h5>
+              <p>Toasts, games and surprises through the night — come ready to celebrate.</p>
+            </div>
+          </div>
+          <div class="rcp-sec">
+            <h5>WHAT TO EXPECT</h5>
+            <div class="rcp-expect-grid">
+              <div><span aria-hidden="true">❀</span>DINNER &amp; TOASTS</div>
+              <div><span aria-hidden="true">♪</span>DANCING</div>
+              <div><span aria-hidden="true">✦</span>PHOTOS &amp; MEMORIES</div>
+              <div><span aria-hidden="true">♥</span>A NIGHT OF CELEBRATION</div>
+            </div>
+          </div>
+          <p class="rcp-close">Come hungry, bring your dancing shoes, and stay till the last song.</p>
+          <button class="flip-hint" type="button" aria-expanded="true" tabindex="-1">Tap to flip back <span aria-hidden="true">↻</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="trad-panel">
+    <h3 class="trad-head">Tradition</h3>
     <div class="celebrate">
-      <div class="event">
-        <div class="row">
-          <div>
-            <img class="ev-photo" src="assets/asset-06.jpg" alt="A cocktail still life on a dark bar top: a martini glass with olives, a tall sparkling drink and a whisky on the rocks, with a cocktail shaker behind — drinks only, no people" loading="lazy" />
-            <div class="time">6:00 PM</div>
-            <h4>Cocktail Hour</h4>
-            <p>Farell's Foyer</p>
-            <p class="about">Drinks and light bites between the ceremonies and the reception — a relaxed hour to mingle, congratulate the couple and find your seat for the evening.</p>
+      <div class="event reception-event" id="reception-card">
+          <div class="flip-inner">
+            <div class="flip-face rflip-front">
+              <h4 class="rf-title"><span class="rf-script">Mexican</span></h4>
+              <p class="rf-body">Mexican wedding traditions are filled with meaning, joy and community. These customs symbolize love, protection, good fortune and the union of two families.</p>
+              <p class="rf-body">They bring energy, laughter and togetherness to the celebration, while also honoring our heritage and the importance of family and friends.</p>
+              <p class="rf-body">We are excited to share these special traditions with you and hope you enjoy being part of this vibrant celebration!</p>
+              <div class="rf-proverb">
+                <p>“La alegría de nuestras tradiciones nos recuerda que el amor es más grande cuando se comparte.”</p>
+                <span>Mexican Proverb</span>
+              </div>
+              <button class="flip-hint" type="button" aria-expanded="false">Tap to flip <span aria-hidden="true">↻</span></button>
+            </div>
+            <div class="flip-face rflip-back" aria-hidden="true">
+              <h4 class="rb-title"><span class="rb-trad">Mexican Traditions</span></h4>
+              <div class="rb-trad-item">
+                <h5>EL MUERTITO</h5>
+                <p>A lively and symbolic tradition where the groom is lifted, carried and tossed into the air by his friends and male relatives. It represents the “death” of his single life and his transition into a married man.</p>
+                <ul>
+                  <li>Male guests lift the groom as if carrying a casket in a fun, celebratory way.</li>
+                  <li>He is tossed in the air and caught to the beat of music.</li>
+                  <li>Guests often remove his shoes.</li>
+                  <li>It’s a high-energy, humorous tradition that symbolizes the end of his bachelorhood and the support of his closest friends as he begins this new chapter.</li>
+                </ul>
+              </div>
+              <div class="rb-trad-item">
+                <h5>LA VÍBORA DE LA MAR</h5>
+                <p>A traditional group dance where everyone forms a long line and passes under arches while the music plays. It symbolizes unity, community and the joining of two families as one.</p>
+              </div>
+              <div class="rb-trad-item">
+                <h5>LA LIGA</h5>
+                <p>The groom removes the bride’s garter and either keeps it or tosses it to the single men. It’s a playful tradition that represents good luck, happiness and the passing of blessings to future marriages.</p>
+              </div>
+              <div class="rb-trad-item">
+                <h5>EL RAMO</h5>
+                <p>The bride tosses her bouquet to the single women. It symbolizes love, happiness and new beginnings, with the hope that the next person to catch it will soon find love and marriage.</p>
+              </div>
+              <div class="rb-expect">
+                <h5>WHAT TO EXPECT</h5>
+                <div class="rb-expect-grid">
+                  <div><span aria-hidden="true">♪</span>LIVELY MUSIC AND DANCING</div>
+                  <div><span aria-hidden="true">♥</span>FAMILY AND FRIENDS TOGETHER</div>
+                  <div><span aria-hidden="true">✦</span>FUN AND INTERACTIVE TRADITIONS</div>
+                  <div><span aria-hidden="true">☀</span>A FESTIVE ATMOSPHERE</div>
+                </div>
+              </div>
+              <button class="flip-hint" type="button" aria-expanded="true" tabindex="-1">Tap to flip back <span aria-hidden="true">↻</span></button>
+            </div>
           </div>
-          <button class="btn small ghost" type="button" data-ics="cocktail">Add</button>
         </div>
-      </div>
-      <div class="event">
-        <div class="row">
-          <div>
-            <img class="ev-photo" src="assets/asset-07.jpg" alt="An empty ballroom set for a wedding reception: round tables in white linen with tall white rose centrepieces, candles and crystal chandeliers overhead — set and waiting, no guests yet" loading="lazy" />
-            <div class="time">Following the ceremonies – 11:59 PM</div>
-            <h4>Wedding Reception</h4>
-            <p>Bixby Ballroom · Marriott Long Beach Downtown<br />111 E Ocean Boulevard, Long Beach, CA 90802</p>
-            <p class="about">Dinner, toasts and dancing as both families celebrate together — Indian and Mexican flavors, heartfelt speeches and a dance floor that stays open until midnight.</p>
+      <div class="event hindu-trad-event" id="hindu-trad-card">
+          <div class="flip-inner">
+            <div class="flip-face htflip-front">
+              <h4 class="ht-title"><span class="ht-magenta">Hindu</span></h4>
+              <p class="ht-body">Our Hindu wedding traditions are sacred rituals passed down through generations, blessing the couple with love, prosperity and a strong partnership.</p>
+              <div class="ht-shloka">
+                <p class="ht-shloka-hi" lang="hi">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br />निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
+                <p class="ht-shloka-tr">Vakratunda Mahakaya Suryakoti Samaprabha<br />Nirvighnam Kuru Me Deva Sarvakaryeshu Sarvada</p>
+                <p class="ht-shloka-en">&ldquo;O Lord Ganesha, with a curved trunk and a massive body, radiant as a million suns, remove all obstacles from my path, in all that I do, always.&rdquo;</p>
+                <span>Prayer to Lord Ganesha</span>
+              </div>
+              <button class="flip-hint" type="button" aria-expanded="false">Tap to flip <span aria-hidden="true">&#8635;</span></button>
+            </div>
+            <div class="flip-face htflip-back" aria-hidden="true">
+              <h4 class="htb-title"><span class="htb-big">Hindu Traditions</span></h4>
+              <div class="ht-item">
+                <h5>GANESH PUJA</h5>
+                <p>We begin by praying to Lord Ganesha, remover of obstacles, for a smooth and blessed married life.</p>
+              </div>
+              <div class="ht-item">
+                <h5>JAI MALA</h5>
+                <p>We exchange flower garlands, symbolizing acceptance, respect and the start of our journey together.</p>
+              </div>
+              <div class="ht-item">
+                <h5>KANYA DAAN</h5>
+                <p>The bride&rsquo;s family gives their blessing and formally gives their daughter&rsquo;s hand in marriage, trusting her to her partner.</p>
+              </div>
+              <div class="ht-item">
+                <h5>GRANTHI BANDHAN</h5>
+                <p>A sacred knot is tied, symbolizing our souls and lives being joined together.</p>
+              </div>
+              <div class="ht-item">
+                <h5>SACRED FIRE (AGNI)</h5>
+                <p>We make offerings to the holy fire, a witness to our vows, for purity, strength and eternal love.</p>
+              </div>
+              <div class="ht-item">
+                <h5>SAPTAPADI</h5>
+                <p>We take seven steps together, each representing a vow for a happy, healthy, prosperous and loving life.</p>
+              </div>
+              <div class="ht-item">
+                <h5>MANGALSUTRA &amp; SINDOOR</h5>
+                <p>The groom places the mangalsutra and sindoor, symbols of love, commitment and protection.</p>
+              </div>
+              <div class="ht-item">
+                <h5>BLESSINGS</h5>
+                <p>We receive the blessings of our family, loved ones and the divine for a lifetime of joy, unity and prosperity.</p>
+              </div>
+              <div class="ht-expect">
+                <h5>WHAT TO EXPECT</h5>
+                <div class="ht-expect-grid">
+                  <div><span aria-hidden="true">&#9835;</span>TRADITIONAL MUSIC<p>Live music, sacred chants and a joyful atmosphere.</p></div>
+                  <div><span aria-hidden="true">&#10047;</span>FAMILY INVOLVEMENT<p>Meaningful rituals with participation from both families.</p></div>
+                  <div><span aria-hidden="true">&#10048;</span>VIBRANT DECOR<p>A beautifully decorated mandap with flowers, colors and cultural elements.</p></div>
+                  <div><span aria-hidden="true">&hearts;</span>LOVE &amp; BLESSINGS<p>A heartfelt ceremony filled with tradition, joy and the support of our loved ones.</p></div>
+                </div>
+              </div>
+              <p class="ht-close">These traditions bring our families and cultures together.</p>
+              <button class="flip-hint" type="button" aria-expanded="true" tabindex="-1">Tap to flip back <span aria-hidden="true">&#8635;</span></button>
+            </div>
           </div>
-          <button class="btn small ghost" type="button" data-ics="reception">Add</button>
         </div>
-      </div>
+    </div>
     </div>
     <p class="quote">“From sacred vows to a dance floor full of joy, we can't wait to celebrate with you.”</p>
     <p style="text-align:center;margin-top:12px"><a class="btn" href="#rsvp">RSVP for the weekend</a></p>
@@ -465,29 +1270,29 @@
       <p>Our own invitation designs — the greeting and the weekend suite. Tap any page below to see it large.</p>
     </div>
     <figure class="invite-viewer">
-      <img id="invite-main" src="assets/asset-08.png" alt="Susan and Shivam's cinematic invitation greeting: the couple dancing in a garden with marigold garlands and temple bells, reading 'Susan &amp; Shivam — With the blessings of God and Lord Ganesha and the love of our families — April 23–24, 2027, Long Beach &amp; Norwalk, California'" />
+      <img id="invite-main" src="assets/asset-22.png" alt="Susan and Shivam's cinematic invitation greeting: the couple dancing in a garden with marigold garlands and temple bells, reading 'Susan &amp; Shivam — With the blessings of God and Lord Ganesha and the love of our families — April 23–24, 2027, Long Beach &amp; Norwalk, California'" />
       <figcaption><span id="invite-caption">Our greeting — “With the blessings of God and Lord Ganesha and the love of our families”</span><span class="inv-count" id="invite-count">Page 1 of 5</span></figcaption>
     </figure>
     <div class="invite-thumbs" role="group" aria-label="Invitation pages — choose one to view it large">
-      <button class="invite-thumb active" type="button" aria-pressed="true" data-src="assets/asset-08.png" data-alt="Susan and Shivam's cinematic invitation greeting: the couple dancing in a garden with marigold garlands and temple bells, reading 'Susan &amp; Shivam — With the blessings of God and Lord Ganesha and the love of our families — April 23–24, 2027, Long Beach &amp; Norwalk, California'" data-caption="Our greeting — “With the blessings of God and Lord Ganesha and the love of our families”">
-        <img src="assets/asset-08.png" alt="" loading="lazy" />
+      <button class="invite-thumb active" type="button" aria-pressed="true" data-src="assets/asset-22.png" data-alt="Susan and Shivam's cinematic invitation greeting: the couple dancing in a garden with marigold garlands and temple bells, reading 'Susan &amp; Shivam — With the blessings of God and Lord Ganesha and the love of our families — April 23–24, 2027, Long Beach &amp; Norwalk, California'" data-caption="Our greeting — “With the blessings of God and Lord Ganesha and the love of our families”">
+        <img src="assets/asset-22.png" alt="" loading="lazy" />
         <span>Our greeting</span>
       </button>
-      <button class="invite-thumb" type="button" aria-pressed="false" data-src="assets/asset-09.png" data-alt="Invitation page for Friday, April 23, 2027 — Celebrate the Colors &amp; Music: Haldi at 10:00 AM and Sangeet at 6:00 PM in the Pike Ballroom, Marriott Long Beach Downtown" data-caption="Friday — Haldi &amp; Sangeet">
-        <img src="assets/asset-09.png" alt="" loading="lazy" />
+      <button class="invite-thumb" type="button" aria-pressed="false" data-src="assets/asset-23.png" data-alt="Invitation page for Friday, April 23, 2027 — Celebrate the Colors &amp; Music: Haldi at 10:00 AM and Sangeet at 6:00 PM in the Pike Ballroom, Marriott Long Beach Downtown" data-caption="Friday — Haldi &amp; Sangeet">
+        <img src="assets/asset-23.png" alt="" loading="lazy" />
         <span>Friday — Haldi &amp; Sangeet</span>
       </button>
-      <button class="invite-thumb" type="button" aria-pressed="false" data-src="assets/asset-10.png" data-alt="Invitation page for Saturday, April 24, 2027 — Two Ceremonies, One Love: Catholic Wedding Ceremony at 11:00 AM in Norwalk and Hindu Wedding Ceremony at 4:00 PM in the Bixby Ballroom" data-caption="Saturday — Two Ceremonies, One Love">
-        <img src="assets/asset-10.png" alt="" loading="lazy" />
+      <button class="invite-thumb" type="button" aria-pressed="false" data-src="assets/asset-24.png" data-alt="Invitation page for Saturday, April 24, 2027 — Two Ceremonies, One Love: Catholic Wedding Ceremony at 11:00 AM in Norwalk and Hindu Wedding Ceremony at 4:00 PM in the Bixby Ballroom" data-caption="Saturday — Two Ceremonies, One Love">
+        <img src="assets/asset-24.png" alt="" loading="lazy" />
         <span>Saturday — Two Ceremonies, One Love</span>
       </button>
-      <button class="invite-thumb" type="button" aria-pressed="false" data-src="assets/asset-11.png" data-alt="Invitation page — Celebrate Together: Cocktail Hour at 6:00 PM in Farell's Foyer and the Wedding Reception in the Bixby Ballroom, Marriott Long Beach Downtown" data-caption="Celebrate Together — Cocktail Hour &amp; Reception">
-        <img src="assets/asset-11.png" alt="" loading="lazy" />
-        <span>Celebrate Together — Cocktail &amp; Reception</span>
+      <button class="invite-thumb" type="button" aria-pressed="false" data-src="assets/asset-25.png" data-alt="Invitation page — Celebrate Together: the Wedding Reception, 6:00 PM – Midnight in the Bixby Ballroom, Marriott Long Beach Downtown" data-caption="Celebrate Together — Wedding Reception">
+        <img src="assets/asset-25.png" alt="" loading="lazy" />
+        <span>Celebrate Together — Wedding Reception</span>
       </button>
-      <button class="invite-thumb" type="button" aria-pressed="false" data-src="assets/asset-12.png" data-alt="Invitation closing page: 'With the blessings of our families, we look forward to a weekend of love, laughter, traditions, and new memories. Shivam &amp; Susan, April 23–24, 2027'" data-caption="With love — Shivam &amp; Susan">
-        <img src="assets/asset-12.png" alt="" loading="lazy" />
-        <span>With love — Shivam &amp; Susan</span>
+      <button class="invite-thumb" type="button" aria-pressed="false" data-src="assets/asset-26.png" data-alt="Invitation closing page: 'With the blessings of our families, we look forward to a weekend of love, laughter, traditions, and new memories. Susan &amp; Shivam, April 23–24, 2027'" data-caption="With love — Susan &amp; Shivam">
+        <img src="assets/asset-26.png" alt="" loading="lazy" />
+        <span>With love — Susan &amp; Shivam</span>
       </button>
     </div>
   </section>
@@ -498,14 +1303,14 @@
       <h2>The Venue</h2>
     </div>
     <div class="venue">
-      <img src="assets/asset-13.jpg" alt="Marriott Long Beach Downtown at sunset, its beige tower and red Marriott sign above Ocean Boulevard, palm trees and downtown Long Beach around it" loading="lazy" />
+      <img src="assets/asset-27.jpg" alt="Marriott Long Beach Downtown at sunset, its beige tower and red Marriott sign above Ocean Boulevard, palm trees and downtown Long Beach around it" loading="lazy" />
       <div class="venue-body">
         <h3>Marriott Long Beach Downtown</h3>
         <address>111 E Ocean Boulevard<br />Long Beach, CA 90802</address>
         <ul class="facts">
-          <li><b>Hindu ceremony &amp; reception:</b> Bixby Ballroom</li>
-          <li><b>Sangeet:</b> Pike Ballroom</li>
-          <li><b>Cocktail hour:</b> Farell's Foyer</li>
+          <li><b>Haldi:</b> Dawson Ballroom, Marriott Long Beach Downtown</li>
+          <li><b>Sangeet:</b> Pike Ballroom, Marriott Long Beach Downtown</li>
+          <li><b>Hindu ceremony &amp; reception:</b> Bixby Ballroom, Marriott Long Beach Downtown</li>
           <li><b>Self-parking:</b> $25 per car</li>
         </ul>
         <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Marriott+Long+Beach+Downtown+111+East+Ocean+Blvd+Long+Beach+CA+90802" target="_blank" rel="noopener">Get directions</a>
@@ -521,7 +1326,7 @@
     </div>
     <div class="xgrid">
       <article class="xcard">
-        <img src="assets/asset-14.jpg" alt="The Aquarium of the Pacific in Long Beach: its wave-shaped blue glass building above a tiered stone plaza under a clear sky" loading="lazy" />
+        <img src="assets/asset-28.jpg" alt="The Aquarium of the Pacific in Long Beach: its wave-shaped blue glass building above a tiered stone plaza under a clear sky" loading="lazy" />
         <div class="xbody">
           <h3>Aquarium of the Pacific</h3>
           <span class="xdist">About 0.7 miles · 15-minute walk</span>
@@ -530,7 +1335,7 @@
         </div>
       </article>
       <article class="xcard">
-        <img src="assets/asset-15.jpg" alt="Shoreline Village at dusk from above: colorful waterfront restaurants and shops around the marina, boats moored in Rainbow Harbor" loading="lazy" />
+        <img src="assets/asset-29.jpg" alt="Shoreline Village at dusk from above: colorful waterfront restaurants and shops around the marina, boats moored in Rainbow Harbor" loading="lazy" />
         <div class="xbody">
           <h3>Shoreline Village &amp; Rainbow Harbor</h3>
           <span class="xdist">About 0.7 miles · waterfront walk</span>
@@ -539,7 +1344,7 @@
         </div>
       </article>
       <article class="xcard">
-        <img src="assets/asset-16.jpg" alt="The Queen Mary ocean liner at sunset in Long Beach harbor, her black hull and three red funnels seen from the air" loading="lazy" />
+        <img src="assets/asset-30.jpg" alt="The Queen Mary ocean liner at sunset in Long Beach harbor, her black hull and three red funnels seen from the air" loading="lazy" />
         <div class="xbody">
           <h3>The Queen Mary</h3>
           <span class="xdist">About 1.5 miles · short drive or bus ride</span>
@@ -548,7 +1353,7 @@
         </div>
       </article>
       <article class="xcard">
-        <img src="assets/asset-17.jpg" alt="A gondola gliding along a calm Naples canal in Long Beach, lined with waterfront homes, docks and palm trees" loading="lazy" />
+        <img src="assets/asset-31.jpg" alt="A gondola gliding along a calm Naples canal in Long Beach, lined with waterfront homes, docks and palm trees" loading="lazy" />
         <div class="xbody">
           <h3>Naples Canals &amp; Belmont Shore</h3>
           <span class="xdist">About 4 miles east · 12-minute drive</span>
@@ -557,7 +1362,7 @@
         </div>
       </article>
       <article class="xcard">
-        <img src="assets/asset-18.jpg" alt="A Catalina Express ferry crossing the water toward Avalon harbor on Catalina Island, the town and casino building on the shore" loading="lazy" />
+        <img src="assets/asset-32.jpg" alt="A Catalina Express ferry crossing the water toward Avalon harbor on Catalina Island, the town and casino building on the shore" loading="lazy" />
         <div class="xbody">
           <h3>Catalina Island Day Trip</h3>
           <span class="xdist">Ferry terminal about 1 mile from the hotel</span>
@@ -566,7 +1371,7 @@
         </div>
       </article>
       <article class="xcard">
-        <img src="assets/asset-19.jpg" alt="The downtown Los Angeles skyline on a clear day, a panorama of towers under a blue sky" loading="lazy" />
+        <img src="assets/asset-33.jpg" alt="The downtown Los Angeles skyline on a clear day, a panorama of towers under a blue sky" loading="lazy" />
         <div class="xbody">
           <h3>Los Angeles Day Trips</h3>
           <span class="xdist">Downtown LA about 25 miles north</span>
@@ -666,12 +1471,9 @@
       </div>
       <fieldset class="field" style="margin-top:16px">
         <legend>Which celebrations will you attend?</legend>
-        <label class="check"><input type="checkbox" name="ev" value="Haldi — Fri Apr 23, 10:00 AM" checked /><span>Haldi<small>Friday, April 23 · 10:00 AM · Marriott Long Beach Downtown</small></span></label>
-        <label class="check"><input type="checkbox" name="ev" value="Sangeet — Fri Apr 23, 6:00 PM" checked /><span>Sangeet<small>Friday, April 23 · 6:00 PM – Midnight · Pike Ballroom</small></span></label>
-        <label class="check"><input type="checkbox" name="ev" value="Catholic Wedding Ceremony — Sat Apr 24, 11:00 AM" checked /><span>Catholic Wedding Ceremony<small>Saturday, April 24 · 11:00 AM · Norwalk (church details to follow)</small></span></label>
-        <label class="check"><input type="checkbox" name="ev" value="Hindu Wedding Ceremony — Sat Apr 24, 4:00 PM" checked /><span>Hindu Wedding Ceremony<small>Saturday, April 24 · 4:00 PM · Bixby Ballroom</small></span></label>
-        <label class="check"><input type="checkbox" name="ev" value="Cocktail Hour — Sat Apr 24, 6:00 PM" checked /><span>Cocktail Hour<small>Saturday, April 24 · 6:00 PM · Farell's Foyer</small></span></label>
-        <label class="check"><input type="checkbox" name="ev" value="Wedding Reception — Sat Apr 24, until 11:59 PM" checked /><span>Wedding Reception<small>Saturday, April 24 · until 11:59 PM · Bixby Ballroom</small></span></label>
+        <label class="check"><input type="checkbox" name="ev" value="Haldi — Fri Apr 23, 10am" checked /><span>Haldi<small>Friday, April 23 · 10:00 AM – 2:00 PM · Dawson Ballroom, Marriott Long Beach Downtown</small></span></label>
+        <label class="check"><input type="checkbox" name="ev" value="Sangeet — Fri Apr 23, 6:00 PM" checked /><span>Una Noche de Bollywood<small>Sangeet · Friday, April 23 · 6:00 PM — Midnight · Pike Ballroom, Marriott Long Beach Downtown</small></span></label>
+        <label class="check"><input type="checkbox" name="ev" value="Hindu Wedding Ceremony — Sat Apr 24, 4:00 PM; Wedding Reception — Sat Apr 24, until 11:59 PM" data-submits="Hindu Wedding Ceremony — Sat Apr 24, 4:00 PM|Wedding Reception — Sat Apr 24, until 11:59 PM" checked /><span>Wedding<small>Saturday, April 24 · 4:00 PM — 11:59 PM · Bixby Ballroom, Marriott Long Beach Downtown (Hindu ceremony &amp; reception)</small></span></label>
       </fieldset>
       <div class="rsvp-grid" style="margin-top:16px">
         <div class="field">
@@ -713,14 +1515,11 @@
   </section>
 
   <footer>
-    <p class="mono">Shivam &amp; Susan · April 23–24, 2027</p>
-    <p>Opening music: “Sajan Sajan x Batman” remix by Abhishek Mehra (Prod By Fearless) — <a href="https://www.youtube.com/watch?v=XMoCQsxLPoM" target="_blank" rel="noopener" style="color:var(--maroon)">watch the visualiser on YouTube</a>.</p>
-    <p>Also playing: “Scooby Doo Pa Pa” by DJ Kass — <a href="https://www.youtube.com/watch?v=onw8kjACY7k" target="_blank" rel="noopener" style="color:var(--maroon)">watch on YouTube</a>.</p>
-    <p>Invitation wording and artwork are the couple's own, from their Canva invitation designs. Venue, schedule and room-block details are confirmed in the signed Marriott Long Beach Downtown Sales Agreement (signed August 29, 2026) and the couple's correspondence with the hotel.</p>
+    <p class="mono">Susan &amp; Shivam · April 23–24, 2027</p>
   </footer>
 </div>
 
-<audio id="wedding-song" src="assets/asset-20.mp3" preload="metadata"></audio>
+<audio id="wedding-song" src="assets/asset-34.mp3" preload="auto"></audio>
 <span class="music-label" id="music-label">Music on</span>
 <button class="music-btn" type="button" id="music-btn" aria-pressed="false" aria-label="Play the wedding music" title="Wedding music">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
@@ -761,18 +1560,17 @@
 
   var LOC='Marriott Long Beach Downtown, 111 E Ocean Blvd, Long Beach, CA 90802';
   var EVENTS={
-    haldi:{title:'Haldi — Shivam & Susan Wedding', start:'20270423T170000Z', end:'20270423T210000Z', loc:LOC, desc:'Haldi ceremony for Shivam & Susan.'},
-    sangeet:{title:'Sangeet — Shivam & Susan Wedding', start:'20270424T010000Z', end:'20270424T070000Z', loc:'Pike Ballroom, '+LOC, desc:'Sangeet celebration for Shivam & Susan.'},
-    catholic:{title:'Catholic Wedding Ceremony — Shivam & Susan', start:'20270424T180000Z', end:'20270424T190000Z', loc:'Norwalk, CA (church details to follow)', desc:'Catholic Wedding Ceremony of Shivam & Susan.'},
-    hindu:{title:'Hindu Wedding Ceremony — Shivam & Susan', start:'20270424T230000Z', end:'20270425T000000Z', loc:'Bixby Ballroom, '+LOC, desc:'Hindu Wedding Ceremony of Shivam & Susan.'},
-    cocktail:{title:'Cocktail Hour — Shivam & Susan Wedding', start:'20270425T010000Z', end:'20270425T020000Z', loc:"Farell's Foyer, "+LOC, desc:'Cocktail hour before the wedding reception.'},
-    reception:{title:'Wedding Reception — Shivam & Susan', start:'20270425T020000Z', end:'20270425T065900Z', loc:'Bixby Ballroom, '+LOC, desc:'Wedding reception following the ceremonies.'}
+    haldi:{title:'Haldi — Susan & Shivam Wedding', start:'20270423T170000Z', end:'20270423T210000Z', loc:'Dawson Ballroom, '+LOC, desc:'Haldi ceremony for Susan & Shivam.'},
+    sangeet:{title:'Sangeet — Susan & Shivam Wedding', start:'20270424T010000Z', end:'20270424T070000Z', loc:'Pike Ballroom, '+LOC, desc:'Sangeet celebration for Susan & Shivam.'},
+    catholic:{title:'Catholic Wedding Ceremony — Susan & Shivam', start:'20270424T170000Z', end:'20270424T180000Z', loc:'St. John of God Catholic Church, 13819 Pioneer Blvd, Norwalk, CA 90650, United States', desc:'Catholic Wedding Ceremony of Susan & Shivam.'},
+    hindu:{title:'Hindu Wedding Ceremony — Susan & Shivam', start:'20270424T230000Z', end:'20270425T010000Z', loc:'Bixby Ballroom, '+LOC, desc:'Hindu Wedding Ceremony of Susan & Shivam.'},
+    reception:{title:'Wedding Reception — Susan & Shivam', start:'20270425T010000Z', end:'20270425T070000Z', loc:'Bixby Ballroom, '+LOC, desc:'Wedding reception following the ceremonies.'}
   };
   function icsFor(keys){
-    var out=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//ShivamSusanWedding//Invite//EN'];
+    var out=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//SusanShivamWedding//Invite//EN'];
     keys.forEach(function(k){
       var e=EVENTS[k]; if(!e) return;
-      out.push('BEGIN:VEVENT','UID:'+k+'-shivam-susan-2027@wedding','DTSTAMP:20261116T120000Z',
+      out.push('BEGIN:VEVENT','UID:'+k+'-susan-shivam-2027@wedding','DTSTAMP:20261116T120000Z',
         'DTSTART:'+e.start,'DTEND:'+e.end,'SUMMARY:'+e.title,'LOCATION:'+e.loc,'DESCRIPTION:'+e.desc,'END:VEVENT');
     });
     out.push('END:VCALENDAR');
@@ -787,20 +1585,20 @@
   }
   document.querySelectorAll('[data-ics]').forEach(function(btn){
     btn.addEventListener('click', function(){
-      downloadICS([btn.getAttribute('data-ics')], 'shivam-susan-'+btn.getAttribute('data-ics')+'.ics');
+      downloadICS([btn.getAttribute('data-ics')], 'susan-shivam-'+btn.getAttribute('data-ics')+'.ics');
       showToast('Calendar file downloaded — open it to add the event.');
     });
   });
   document.getElementById('cal-weekend').addEventListener('click', function(){
-    downloadICS(['haldi','sangeet','catholic','hindu','cocktail','reception'], 'shivam-susan-wedding-weekend.ics');
-    showToast('Wedding weekend calendar file downloaded — all six celebrations included.');
+    downloadICS(['haldi','sangeet','catholic','hindu','reception'], 'susan-shivam-wedding-weekend.ics');
+    showToast('Wedding weekend calendar file downloaded — all five celebrations included.');
   });
 
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ——— Falling marigold & rose petals ——— */
   var petalsBox = document.getElementById('petals');
-  var petalColors = ['#dd7f1d','#eda54f','#c9a227','#a83a32','#e5a3ae'];
+  var petalColors = ['#e85a71','#f191a2','#c93a54','#7fa35c','#f3d98b'];
   function makePetal(burst){
     var p = document.createElement('span');
     p.className = 'petal' + (burst ? ' burst-petal' : '');
@@ -830,7 +1628,12 @@
   var musicBtn = document.getElementById('music-btn');
   var musicLabel = document.getElementById('music-label');
   var Music = (function(){
-    var playing = false;
+    /* The button state follows the audio element's real events, not an
+       optimistic flag — if the browser delays or refuses a play() call the
+       request stays queued (wantMusic) and is retried when the file can
+       play, so a seal tap made while the song is still loading still ends
+       with the song playing. */
+    var playing = false, wantMusic = false;
     function setBtn(){
       musicBtn.classList.toggle('playing', playing);
       musicBtn.setAttribute('aria-pressed', playing ? 'true' : 'false');
@@ -840,23 +1643,36 @@
       musicLabel.classList.add('show');
       setTimeout(function(){ musicLabel.classList.remove('show'); }, 2200);
     }
+    function tryPlay(){
+      if (!song) return;
+      var pr = song.play();
+      if (pr && pr.catch) pr.catch(function(){
+        if (wantMusic) showToast('One moment — the song is still loading. Tap the gold music button if it does not start.');
+      });
+    }
     if (song) {
-      song.addEventListener('ended', function(){ playing = false; setBtn(); });
+      song.addEventListener('play', function(){ playing = true; setBtn(); });
+      song.addEventListener('pause', function(){ if (playing) { playing = false; setBtn(); } });
+      song.addEventListener('ended', function(){ playing = false; wantMusic = false; setBtn(); });
+      song.addEventListener('canplay', function(){ if (wantMusic && song.paused) tryPlay(); });
+      song.addEventListener('error', function(){
+        if (wantMusic) { wantMusic = false; showToast('The song could not be loaded.'); }
+      });
     }
     return {
       start: function(){
         if (typeof Scooby !== 'undefined') Scooby.stop();
         if (!song) { showToast('Music is not available in this browser.'); return; }
-        var pr = song.play();
-        if (pr && pr.catch) pr.catch(function(){ showToast('Tap the gold music button to start the song.'); });
-        playing = true; setBtn();
+        wantMusic = true;
+        tryPlay();
       },
       stop: function(){
-        if (!song || !playing) return;
-        song.pause();
-        playing = false; setBtn();
+        wantMusic = false;
+        if (!song) return;
+        if (!song.paused) song.pause();
+        if (playing) { playing = false; setBtn(); }
       },
-      toggle: function(){ playing ? this.stop() : this.start(); },
+      toggle: function(){ (playing || wantMusic) ? this.stop() : this.start(); },
       isPlaying: function(){ return playing; }
     };
   })();
@@ -866,7 +1682,7 @@
   var scoobyBtn = document.getElementById('scooby-btn');
   var scoobyLabel = document.getElementById('scooby-label');
   var Scooby = (function(){
-    var player = null, ready = false, playing = false, wantPlay = false;
+    var player = null, ready = false, playing = false, wantPlay = false, creating = false, waitTimer = null;
     function setBtn(){
       scoobyBtn.classList.toggle('playing', playing);
       scoobyBtn.setAttribute('aria-pressed', playing ? 'true' : 'false');
@@ -877,20 +1693,23 @@
       setTimeout(function(){ scoobyLabel.classList.remove('show'); }, 2200);
     }
     function createPlayer(){
+      if (creating || player) return;
+      creating = true;
       player = new YT.Player('scooby-player', {
         videoId: 'onw8kjACY7k',
         playerVars: { playsinline: 1 },
         events: {
           onReady: function(){
             ready = true;
+            clearTimeout(waitTimer);
             if (wantPlay) { wantPlay = false; player.playVideo(); }
           },
           onStateChange: function(e){
-            if (e.data === YT.PlayerState.PLAYING) { playing = true; setBtn(); }
+            if (e.data === YT.PlayerState.PLAYING) { playing = true; clearTimeout(waitTimer); setBtn(); }
             else if (e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.ENDED) { playing = false; setBtn(); }
           },
           onError: function(){
-            playing = false; wantPlay = false; setBtn();
+            playing = false; wantPlay = false; clearTimeout(waitTimer); setBtn();
             showToast('Scooby Doo Pa Pa could not be played.');
           }
         }
@@ -901,21 +1720,33 @@
     else {
       var tag = document.createElement('script');
       tag.src = 'https://www.youtube.com/iframe_api';
+      tag.onerror = function(){ if (wantPlay) showToast('Scooby Doo Pa Pa needs a connection to YouTube — please try again.'); };
       document.head.appendChild(tag);
     }
     return {
       start: function(){
         if (typeof Music !== 'undefined') Music.stop();
-        if (!ready || !player) { wantPlay = true; return; }
+        if (!ready || !player) {
+          /* Queue the tap: the song starts by itself the moment the player
+             is ready, and the guest gets feedback instead of silence. */
+          wantPlay = true;
+          showToast('Loading Scooby Doo Pa Pa…');
+          clearTimeout(waitTimer);
+          waitTimer = setTimeout(function(){
+            if (wantPlay && !ready) showToast('Scooby Doo Pa Pa is taking a while to load — check your connection and tap again.');
+          }, 8000);
+          return;
+        }
         player.playVideo();
       },
       stop: function(){
         if (!playing && !wantPlay) return;
         wantPlay = false;
+        clearTimeout(waitTimer);
         if (player && ready) player.pauseVideo();
         playing = false; setBtn();
       },
-      toggle: function(){ playing ? this.stop() : this.start(); },
+      toggle: function(){ (playing || wantPlay) ? this.stop() : this.start(); },
       isPlaying: function(){ return playing; }
     };
   })();
@@ -930,20 +1761,27 @@
     if (reduceMotion) {
       envelope.classList.add('gone');
       document.body.classList.remove('locked');
+      document.body.classList.add('opened');
       setTimeout(function(){ if (envelope.parentNode) envelope.parentNode.removeChild(envelope); }, 100);
       return;
     }
     document.body.classList.add('locked');
-    envelope.classList.add('opening');
+    /* The 5-second opening: the gates stay still while the light does the
+       work — 0–2s the seal glows gold and light spreads from it across the
+       gates; 2–4s the light floods the whole screen to white; 4–5s the
+       envelope fades and the hero fades in out of the white. */
+    var sealBtn = document.getElementById('seal');
+    if (sealBtn) sealBtn.classList.add('glow');
+    envelope.classList.add('phase-glow');
     petalBurst();
-    /* Let the gates swing fully open and hold for a beat before the screen
-       fades — the gate opening must be seen, not skipped straight to the
-       inside pages. */
+    setTimeout(function(){ envelope.classList.add('phase-flood'); }, 2000);
     setTimeout(function(){
       envelope.classList.add('gone');
       document.body.classList.remove('locked');
-    }, 2300);
-    setTimeout(function(){ if (envelope.parentNode) envelope.parentNode.removeChild(envelope); }, 3500);
+      document.body.classList.add('opened');
+      window.scrollTo(0, 0);
+    }, 4000);
+    setTimeout(function(){ if (envelope.parentNode) envelope.parentNode.removeChild(envelope); }, 5200);
   }
   if (envelope) {
     document.body.classList.add('locked');
@@ -966,6 +1804,273 @@
       out.classList.add('show');
       out.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
     });
+  }
+
+  /* ——— Haldi flip card — tap the card (or its flip button) to turn it over; the box resizes to the face showing ——— */
+  var haldiCard = document.getElementById('haldi-card');
+  if (haldiCard) {
+    var flipInner = haldiCard.querySelector('.flip-inner');
+    var flipFront = haldiCard.querySelector('.flip-front');
+    var flipBack = haldiCard.querySelector('.flip-back');
+    var haldiFlipped = false;
+    function sizeHaldi(){
+      var face = haldiFlipped ? flipBack : flipFront;
+      if (face && face.offsetHeight) flipInner.style.height = face.offsetHeight + 'px';
+    }
+    function setHaldiFaces(){
+      flipFront.setAttribute('aria-hidden', haldiFlipped ? 'true' : 'false');
+      flipBack.setAttribute('aria-hidden', haldiFlipped ? 'false' : 'true');
+      flipFront.querySelectorAll('button').forEach(function(b){ b.tabIndex = haldiFlipped ? -1 : 0; });
+      flipBack.querySelectorAll('button').forEach(function(b){ b.tabIndex = haldiFlipped ? 0 : -1; });
+      var frontHint = flipFront.querySelector('.flip-hint');
+      var backHint = flipBack.querySelector('.flip-hint');
+      if (frontHint) frontHint.setAttribute('aria-expanded', haldiFlipped ? 'true' : 'false');
+      if (backHint) backHint.setAttribute('aria-expanded', haldiFlipped ? 'true' : 'false');
+    }
+    haldiCard.addEventListener('click', function(e){
+      if (e.target.closest('[data-ics]')) return;
+      haldiFlipped = !haldiFlipped;
+      haldiCard.classList.toggle('flipped', haldiFlipped);
+      sizeHaldi();
+      setHaldiFaces();
+    });
+    sizeHaldi();
+    setHaldiFaces();
+    window.addEventListener('resize', sizeHaldi);
+    window.addEventListener('load', sizeHaldi);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizeHaldi);
+  }
+
+  /* ——— Traditions pair — both cards share one height: the taller of the two showing faces.
+     The pair resizes on every flip, exactly like the Haldi/Sangeet cards, so the page below
+     moves down while a back is showing and back up when the card flips back. Faces are
+     measured at their natural height: their min-height:100% stretch-to-fill would otherwise
+     inflate the measurement and the pair could grow but never shrink back. ——— */
+  function syncTradHeights(){
+    var rc = document.getElementById('reception-card');
+    var hc = document.getElementById('hindu-trad-card');
+    if (!rc || !hc) return;
+    var ri = rc.querySelector('.flip-inner');
+    var hi = hc.querySelector('.flip-inner');
+    var rf = rc.classList.contains('flipped') ? rc.querySelector('.rflip-back') : rc.querySelector('.rflip-front');
+    var hf = hc.classList.contains('flipped') ? hc.querySelector('.htflip-back') : hc.querySelector('.htflip-front');
+    if (!ri || !hi || !rf || !hf) return;
+    var allFaces = [rc.querySelector('.rflip-front'), rc.querySelector('.rflip-back'), hc.querySelector('.htflip-front'), hc.querySelector('.htflip-back')];
+    var savedMin = allFaces.map(function(f){ return f ? f.style.minHeight : ''; });
+    allFaces.forEach(function(f){ if (f) f.style.minHeight = '0px'; });
+    ri.style.height = ''; hi.style.height = '';
+    /* scrollHeight as well as offsetHeight: a back that is being clipped by a
+       too-short inner still reports its full content height in scrollHeight. */
+    var target = Math.max(rf.offsetHeight, rf.scrollHeight, hf.offsetHeight, hf.scrollHeight);
+    allFaces.forEach(function(f, i){ if (f) f.style.minHeight = savedMin[i]; });
+    if (target > 0) { ri.style.height = target + 'px'; hi.style.height = target + 'px'; }
+  }
+
+  /* ——— Reception flip card — tap the card (or its flip button) to turn it over; the box resizes to the face showing ——— */
+  var receptionCard = document.getElementById('reception-card');
+  if (receptionCard) {
+    var rFlipInner = receptionCard.querySelector('.flip-inner');
+    var rFlipFront = receptionCard.querySelector('.rflip-front');
+    var rFlipBack = receptionCard.querySelector('.rflip-back');
+    var receptionFlipped = false;
+    function sizeReception(){
+      syncTradHeights();
+    }
+    function setReceptionFaces(){
+      rFlipFront.setAttribute('aria-hidden', receptionFlipped ? 'true' : 'false');
+      rFlipBack.setAttribute('aria-hidden', receptionFlipped ? 'false' : 'true');
+      rFlipFront.querySelectorAll('button').forEach(function(b){ b.tabIndex = receptionFlipped ? -1 : 0; });
+      rFlipBack.querySelectorAll('button').forEach(function(b){ b.tabIndex = receptionFlipped ? 0 : -1; });
+      var frontHint = rFlipFront.querySelector('.flip-hint');
+      var backHint = rFlipBack.querySelector('.flip-hint');
+      if (frontHint) frontHint.setAttribute('aria-expanded', receptionFlipped ? 'true' : 'false');
+      if (backHint) backHint.setAttribute('aria-expanded', receptionFlipped ? 'true' : 'false');
+    }
+    receptionCard.addEventListener('click', function(e){
+      if (e.target.closest('[data-ics]')) return;
+      receptionFlipped = !receptionFlipped;
+      receptionCard.classList.toggle('flipped', receptionFlipped);
+      sizeReception();
+      setReceptionFaces();
+    });
+    sizeReception();
+    setReceptionFaces();
+    window.addEventListener('resize', sizeReception);
+    window.addEventListener('load', sizeReception);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizeReception);
+  }
+
+  /* ——— Sangeet flip card — tap the card (or its flip button) to turn it over; the box resizes to the face showing ——— */
+  var sangeetCard = document.getElementById('sangeet-card');
+  if (sangeetCard) {
+    var sFlipInner = sangeetCard.querySelector('.flip-inner');
+    var sFlipFront = sangeetCard.querySelector('.sflip-front');
+    var sFlipBack = sangeetCard.querySelector('.sflip-back');
+    var sangeetFlipped = false;
+    function sizeSangeet(){
+      var face = sangeetFlipped ? sFlipBack : sFlipFront;
+      if (face && face.offsetHeight) sFlipInner.style.height = face.offsetHeight + 'px';
+    }
+    function setSangeetFaces(){
+      sFlipFront.setAttribute('aria-hidden', sangeetFlipped ? 'true' : 'false');
+      sFlipBack.setAttribute('aria-hidden', sangeetFlipped ? 'false' : 'true');
+      sFlipFront.querySelectorAll('button').forEach(function(b){ b.tabIndex = sangeetFlipped ? -1 : 0; });
+      sFlipBack.querySelectorAll('button').forEach(function(b){ b.tabIndex = sangeetFlipped ? 0 : -1; });
+      var frontHint = sFlipFront.querySelector('.flip-hint');
+      var backHint = sFlipBack.querySelector('.flip-hint');
+      if (frontHint) frontHint.setAttribute('aria-expanded', sangeetFlipped ? 'true' : 'false');
+      if (backHint) backHint.setAttribute('aria-expanded', sangeetFlipped ? 'true' : 'false');
+    }
+    sangeetCard.addEventListener('click', function(e){
+      if (e.target.closest('[data-ics]')) return;
+      sangeetFlipped = !sangeetFlipped;
+      sangeetCard.classList.toggle('flipped', sangeetFlipped);
+      sizeSangeet();
+      setSangeetFaces();
+    });
+    sizeSangeet();
+    setSangeetFaces();
+    window.addEventListener('resize', sizeSangeet);
+    window.addEventListener('load', sizeSangeet);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizeSangeet);
+  }
+
+  /* ——— Catholic flip card — tap the card (or its flip button) to turn it over; the box resizes to the face showing ——— */
+  var catholicCard = document.getElementById('catholic-card');
+  if (catholicCard) {
+    var cFlipInner = catholicCard.querySelector('.flip-inner');
+    var cFlipFront = catholicCard.querySelector('.cflip-front');
+    var cFlipBack = catholicCard.querySelector('.cflip-back');
+    var catholicFlipped = false;
+    function sizeCatholic(){
+      var face = catholicFlipped ? cFlipBack : cFlipFront;
+      if (face && face.offsetHeight) cFlipInner.style.height = face.offsetHeight + 'px';
+    }
+    function setCatholicFaces(){
+      cFlipFront.setAttribute('aria-hidden', catholicFlipped ? 'true' : 'false');
+      cFlipBack.setAttribute('aria-hidden', catholicFlipped ? 'false' : 'true');
+      cFlipFront.querySelectorAll('button').forEach(function(b){ b.tabIndex = catholicFlipped ? -1 : 0; });
+      cFlipBack.querySelectorAll('button').forEach(function(b){ b.tabIndex = catholicFlipped ? 0 : -1; });
+      var frontHint = cFlipFront.querySelector('.flip-hint');
+      var backHint = cFlipBack.querySelector('.flip-hint');
+      if (frontHint) frontHint.setAttribute('aria-expanded', catholicFlipped ? 'true' : 'false');
+      if (backHint) backHint.setAttribute('aria-expanded', catholicFlipped ? 'true' : 'false');
+    }
+    catholicCard.addEventListener('click', function(e){
+      if (e.target.closest('[data-ics]')) return;
+      catholicFlipped = !catholicFlipped;
+      catholicCard.classList.toggle('flipped', catholicFlipped);
+      sizeCatholic();
+      setCatholicFaces();
+    });
+    sizeCatholic();
+    setCatholicFaces();
+    window.addEventListener('resize', sizeCatholic);
+    window.addEventListener('load', sizeCatholic);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizeCatholic);
+  }
+
+  /* ——— Hindu flip card — tap the card (or its flip button) to turn it over; the box resizes to the face showing ——— */
+  var hinduCard = document.getElementById('hindu-card');
+  if (hinduCard) {
+    var huFlipInner = hinduCard.querySelector('.flip-inner');
+    var huFlipFront = hinduCard.querySelector('.hflip-front');
+    var huFlipBack = hinduCard.querySelector('.hflip-back');
+    var hinduFlipped = false;
+    function sizeHindu(){
+      var face = hinduFlipped ? huFlipBack : huFlipFront;
+      if (face && face.offsetHeight) huFlipInner.style.height = face.offsetHeight + 'px';
+    }
+    function setHinduFaces(){
+      huFlipFront.setAttribute('aria-hidden', hinduFlipped ? 'true' : 'false');
+      huFlipBack.setAttribute('aria-hidden', hinduFlipped ? 'false' : 'true');
+      huFlipFront.querySelectorAll('button').forEach(function(b){ b.tabIndex = hinduFlipped ? -1 : 0; });
+      huFlipBack.querySelectorAll('button').forEach(function(b){ b.tabIndex = hinduFlipped ? 0 : -1; });
+      var frontHint = huFlipFront.querySelector('.flip-hint');
+      var backHint = huFlipBack.querySelector('.flip-hint');
+      if (frontHint) frontHint.setAttribute('aria-expanded', hinduFlipped ? 'true' : 'false');
+      if (backHint) backHint.setAttribute('aria-expanded', hinduFlipped ? 'true' : 'false');
+    }
+    hinduCard.addEventListener('click', function(e){
+      if (e.target.closest('[data-ics]')) return;
+      hinduFlipped = !hinduFlipped;
+      hinduCard.classList.toggle('flipped', hinduFlipped);
+      sizeHindu();
+      setHinduFaces();
+    });
+    sizeHindu();
+    setHinduFaces();
+    window.addEventListener('resize', sizeHindu);
+    window.addEventListener('load', sizeHindu);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizeHindu);
+  }
+
+  /* ——— Hindu Traditions flip card — tap the card (or its flip button) to turn it over; the box resizes to the face showing ——— */
+  var hinduTradCard = document.getElementById('hindu-trad-card');
+  if (hinduTradCard) {
+    var htFlipInner = hinduTradCard.querySelector('.flip-inner');
+    var htFlipFront = hinduTradCard.querySelector('.htflip-front');
+    var htFlipBack = hinduTradCard.querySelector('.htflip-back');
+    var hinduTradFlipped = false;
+    function sizeHinduTrad(){
+      syncTradHeights();
+    }
+    function setHinduTradFaces(){
+      htFlipFront.setAttribute('aria-hidden', hinduTradFlipped ? 'true' : 'false');
+      htFlipBack.setAttribute('aria-hidden', hinduTradFlipped ? 'false' : 'true');
+      htFlipFront.querySelectorAll('button').forEach(function(b){ b.tabIndex = hinduTradFlipped ? -1 : 0; });
+      htFlipBack.querySelectorAll('button').forEach(function(b){ b.tabIndex = hinduTradFlipped ? 0 : -1; });
+      var frontHint = htFlipFront.querySelector('.flip-hint');
+      var backHint = htFlipBack.querySelector('.flip-hint');
+      if (frontHint) frontHint.setAttribute('aria-expanded', hinduTradFlipped ? 'true' : 'false');
+      if (backHint) backHint.setAttribute('aria-expanded', hinduTradFlipped ? 'true' : 'false');
+    }
+    hinduTradCard.addEventListener('click', function(){
+      hinduTradFlipped = !hinduTradFlipped;
+      hinduTradCard.classList.toggle('flipped', hinduTradFlipped);
+      sizeHinduTrad();
+      setHinduTradFaces();
+    });
+    sizeHinduTrad();
+    setHinduTradFaces();
+    window.addEventListener('resize', sizeHinduTrad);
+    window.addEventListener('load', sizeHinduTrad);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizeHinduTrad);
+  }
+
+  /* ——— Reception party flip card — the standalone card above the Tradition panel; tap the card (or its flip button) to turn it over; the box resizes to the face showing ——— */
+  var partyCard = document.getElementById('party-card');
+  if (partyCard) {
+    var pFlipInner = partyCard.querySelector('.flip-inner');
+    var pFlipFront = partyCard.querySelector('.rcp-front');
+    var pFlipBack = partyCard.querySelector('.rcp-back');
+    var partyFlipped = false;
+    function sizeParty(){
+      var face = partyFlipped ? pFlipBack : pFlipFront;
+      if (face) { var h = Math.max(face.offsetHeight, face.scrollHeight); if (h) pFlipInner.style.height = h + 'px'; }
+    }
+    function setPartyFaces(){
+      pFlipFront.setAttribute('aria-hidden', partyFlipped ? 'true' : 'false');
+      pFlipBack.setAttribute('aria-hidden', partyFlipped ? 'false' : 'true');
+      pFlipFront.querySelectorAll('button').forEach(function(b){ b.tabIndex = partyFlipped ? -1 : 0; });
+      pFlipBack.querySelectorAll('button').forEach(function(b){ b.tabIndex = partyFlipped ? 0 : -1; });
+      var frontHint = pFlipFront.querySelector('.flip-hint');
+      var backHint = pFlipBack.querySelector('.flip-hint');
+      if (frontHint) frontHint.setAttribute('aria-expanded', partyFlipped ? 'true' : 'false');
+      if (backHint) backHint.setAttribute('aria-expanded', partyFlipped ? 'true' : 'false');
+    }
+    partyCard.addEventListener('click', function(e){
+      if (e.target.closest('[data-ics]')) return;
+      partyFlipped = !partyFlipped;
+      partyCard.classList.toggle('flipped', partyFlipped);
+      sizeParty();
+      setPartyFaces();
+    });
+    sizeParty();
+    setPartyFaces();
+    window.addEventListener('resize', sizeParty);
+    window.addEventListener('load', sizeParty);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizeParty);
   }
 
   /* ——— Invitation viewer — tap a thumbnail below to open that page large; the first page shows by default ——— */
@@ -1010,6 +2115,32 @@
       });
     }, { threshold: 0.12 });
     revealEls.forEach(function(el){ io.observe(el); });
+  }
+
+  /* ——— Hero glitter: tiny gold sparkles twinkling over the archway ——— */
+  var glitterBox = document.getElementById('glitter');
+  if (!reduceMotion && glitterBox) {
+    for (var g = 0; g < 34; g++) {
+      var sp = document.createElement('span');
+      sp.className = 'sparkle';
+      var sz = 2 + Math.random() * 3.5;
+      sp.style.width = sz + 'px';
+      sp.style.height = sz + 'px';
+      sp.style.left = (Math.random() * 100) + '%';
+      sp.style.top = (Math.random() * 100) + '%';
+      sp.style.animationDuration = (1.8 + Math.random() * 2.6) + 's';
+      sp.style.animationDelay = (-Math.random() * 3) + 's';
+      glitterBox.appendChild(sp);
+    }
+  }
+
+  /* ——— Scroll cue: glides down to the countdown ——— */
+  var scrollCue = document.getElementById('scroll-cue');
+  if (scrollCue) {
+    scrollCue.addEventListener('click', function(){
+      var w = document.getElementById('welcome');
+      if (w) w.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
   }
 
   /* ——— Countdown seconds tick ——— */
